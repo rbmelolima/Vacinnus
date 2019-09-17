@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <header>
-        <?php echo $importarhtml["headerINDEX"]; ?>
-    </header>
+
+    <?php echo $importarhtml["headerINDEX"]; ?>
+
 
     <div class="container-head banner">
         <h1>CAXUMBA</h1>
@@ -119,7 +119,7 @@
 
 
     <?php echo $importarhtml["footerINDEX"]; ?>
-    
+
     <script src="JS/jquery.min.js"></script>
     <script src="JS/popper.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>

@@ -17,7 +17,7 @@
 
 <body>
     <header>
-    <?php echo $importarhtml["headerINDEX"]; ?>
+        <?php echo $importarhtml["headerINDEX"]; ?>
     </header>
     <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light" id="anchor_login">
         <div class="container">
@@ -43,30 +43,36 @@
     <?php
     if (isset($_POST['login'])) {
         include("CONEXAO.php");
+
         $cpf = $_POST['cpf'];
         $senha = MD5($_POST['senha']);
+
+        $verificar = $cpf / 2;
+
         if (empty($cpf) || empty($senha)) {
             echo "<div class=\"alert alert-danger\" role=\"alert\">";
             echo "Erro";
             echo "</div>";
         } else {
-            $sql = "select * from pessoa WHERE cpf = '$cpf' and senha = '$senha';";
-            $result = mysqli_query($conn, $sql);
-            $linhasafetadas = mysqli_num_rows($result);
+            if (is_numeric($verificar)) {
+                $sql = "select * from pessoa WHERE cpf = '$cpf' and senha = '$senha';";
+                $result = mysqli_query($conn, $sql);
+                $linhasafetadas = mysqli_num_rows($result);
 
-            if ($linhasafetadas > 0) {
-                $_SESSION['cpf'] = $cpf;
-                $_SESSION['senha'] = $senha;
-                header("Location: PERFIL.php");
-            } else {
-                session_destroy();
-                header("Location: INDEX.php");
+                if ($linhasafetadas > 0) {
+                    $_SESSION['cpf'] = $cpf;
+                    $_SESSION['senha'] = $senha;
+                    header("Location: PERFIL.php");
+                } else {
+                    session_destroy();
+                    header("Location: INDEX.php");
+                }
             }
         }
     }
     ?>
 
-<?php echo $importarhtml["footerINDEX"]; ?>
+    <?php echo $importarhtml["footerINDEX"]; ?>
     <script src="JS/jquery.min.js"></script>
     <script src="JS/popper.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>

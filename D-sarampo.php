@@ -16,11 +16,8 @@
 </head>
 
 
-<body>
-    <header>
-    <?php echo $importarhtml["headerINDEX"]; ?>
-    </header>
-
+<body>    
+    <?php echo $importarhtml["headerINDEX"]; ?>  
 
     <div class="container-head banner">
         <h1>SARAMPO</h1>

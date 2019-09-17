@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <header>
+  
     <?php echo $importarhtml["headerINDEX"]; ?>
-    </header>
+   
 
 
     <div class="container-head banner">

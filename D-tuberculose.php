@@ -17,9 +17,9 @@
 
 
 <body>
-    <header>
+    
     <?php echo $importarhtml["headerINDEX"]; ?>
-    </header>
+   
 
     <div class="container-head banner">
         <h1>TUBERCULOSE</h1>

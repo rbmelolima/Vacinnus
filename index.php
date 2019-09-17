@@ -16,6 +16,7 @@
 
 <body>
     <?php echo $importarhtml["headerINDEX"]; ?>
+
     <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light" id="anchor_login">
         <div class="container">
             <div class="row align-items-center justify-content-center">
@@ -65,11 +66,14 @@
 
     <?php
     if (isset($_POST['cadastrar'])) {
+        //Conectar com o banco de dados
         $servidor = "localhost";
         $bancodedados = "vaccinus";
         $user = "root";
         $palavrapasse = "";
         $conn = mysqli_connect($servidor, $user, $palavrapasse, $bancodedados);
+
+        //Variáveis do usuário
         $nome = $_POST['nome'];
         $datanasc = $_POST['datanasc'];
         $celular = $_POST['celular'];
@@ -78,6 +82,8 @@
         $email = $_POST['email'];
         $senha = MD5($_POST['senha']);
         $senha1 = MD5($_POST['senha1']);
+
+
         $permissao = true;
         if (empty($nome) || empty($datanasc) || empty($celular) || empty($cep) || empty($cpf) || empty($email) || empty($senha1) || empty($senha)) {
             $permissao = false;

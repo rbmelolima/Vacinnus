@@ -109,7 +109,7 @@
                                         }
                                     }
                                     ?>
-                                </span>                                
+                                </span>                  
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -133,30 +133,9 @@
                 <!-- Conteúdo da página -->
                 <div class="container-fluid">
 
-                    <div class="card" style="color: black">
-                        <?php
-                        include("CONEXAO.php");
-                        $cpf = $_SESSION['cpf'];
-                        $sql = "SELECT * FROM pessoa WHERE cpf = '$cpf'";
-                        $result = mysqli_query($conn, $sql);
+                    <h3> Em Breve... </h3>
 
 
-                        if ($result->num_rows > 0) {
-                            while ($row = $result->fetch_assoc()) {
-                                echo "<div class=\"card-header\"> <h2>" . $row['nome'] . "</h2> </div>";
-                                echo "<div class=\"card-body\">";
-                                echo "<h5>Informações Básicas</h5>";
-                                echo "<p><bold>Email: </bold>" . $row['email'] . "</p>";
-                                echo "<p><bold>Data de Nascimento: </bold>" . $row['datanasc'] . "</p>";
-                                echo "<p><bold>CPF: </bold>" . $row['cpf'] . "</p>";
-                                echo "<p><bold>CEP: </bold>" . $row['cep'] . "</p>";
-                                echo "<p><bold>Telefone: </bold>" . $row['celular'] . "</p>";
-                                echo "</div>";
-                                echo "<div class=\"card-footer\"><p>Último acesso: 10/10/2019</p></div>";
-                            }
-                        }
-                        ?>
-                    </div>
                 </div>
                 <!-- Fim do conteúdo da página -->
                 <?php echo $importarhtml["footerADMIN"]; ?>

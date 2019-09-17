@@ -17,9 +17,10 @@
 
 
 <body>
-    <header>
+    
     <?php echo $importarhtml["headerINDEX"]; ?>
-    </header>
+
+    
     <div class="container-head banner">
         <h1>RUBÉOLA</h1>
         <p class="text-desc center"> Infecção viral contagiosa evitável por vacina e conhecida pela sua erupção vermelha característica. </p>

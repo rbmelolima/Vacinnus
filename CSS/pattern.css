@@ -46,6 +46,12 @@ figcaption{
     background-color: whitesmoke;
 }
 
+#banner{
+    background-image: url('../IMG/banner.png');
+    height: auto;
+    width: 100%;
+}
+
 .action{
     text-align: center;    
     padding-top: 25px;     
@@ -85,15 +91,10 @@ figcaption{
 }
 
 .banner{
-    text-align: center;   
+    text-align: center;
+    background-color: #20B2AA;
     color: white;
     padding: 10%;
-    background: #20B3AB;   
-    background: -moz-linear-gradient(45deg, #20B3AB 0%, #196FBF 100%);    
-    background: -webkit-linear-gradient(45deg, #20B3AB 0%, #196FBF 100%);
-    background: -o-linear-gradient(45deg, #20B3AB 0%, #196FBF 100%);
-    background: linear-gradient(45deg, #20B3AB 0%, #196FBF 100%);    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#20B3AB', endColorstr='#196FBF', GradientType=1);   
 }
 
 .middle{
@@ -118,6 +119,10 @@ figcaption{
     text-align: right;
 }
 
+.btn{
+    width: 100%;
+    margin-bottom: 10px;
+}
 
 .container-login, .container-cadastro{
     background-color: white;        
@@ -134,61 +139,6 @@ figcaption{
     height: 100%;
 }
 
-.logo{
-    background-image: url('../IMG/LOGO/brand.png');
-    width: 100px;  
-}
-
-
-/* NAVBAR */
-.nav-item{
-    font-family: 'Roboto', sans-serif;    
-    padding: 5px 5px;
-}
-
-.nav-link{
-    text-decoration: none;
-    color: black;
-}
-
-.nav-link:hover{
-    background-color: #20B2AA;
-    color: black;
-}
-
-.nav-color{
-    background-color: whitesmoke;
-}
-
-.navbar-toggler-icon{
-    background-image: url('../IMG/ICON/menu.png');
-    width: 32px;
-}
-
-.navbar{
-    padding: 10px 5%;
-}
-
-/*IMAGENS*/
-.img-center{   
-    margin: 0 auto;
-    display: block;
-    position: relative;
-}
-
-.img-profile{
-    max-width: 200px;
-}
-
-.profile{
-    margin-bottom: 50px;
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-
-}
-
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
     .container-login, .container-cadastro{    
@@ -200,15 +150,3 @@ figcaption{
     }    
 }
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {  
-
-}
-
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
-
-}
-
-/* Extra large devices (large desktops)
-No media query since the extra-large breakpoint has no upper bound on its width */

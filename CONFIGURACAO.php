@@ -133,8 +133,7 @@
                                         }
                                     }
                                     ?>
-                                </span>
-                                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                                </span>                               
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -157,6 +156,54 @@
 
                 <!-- Conteúdo da página -->
                 <div class="container-fluid">
+                    <?php
+                    include("CONEXAO.php");
+                    $cpf = $_SESSION['cpf'];
+                    if (isset($_POST['alteraremail'])) {
+                        $antigo = $_POST['email1'];
+                        $novo = $_POST['email2'];
+                        if ($antigo == $novo) {
+                            echo "O email antigo e o novo não podem ser iguais.";
+                        } else {
+                            $sql = "update pessoa set email = '$novo' where cpf = " . $cpf . ";";
+                            if (mysqli_query($conn, $sql)) {
+                                echo "<h3> Alterado com sucesso </h3>";
+                            } else {
+                                echo " <h3> Erro ao alterar: </h3>" . $sql . "<br>" . mysqli_error($conn);
+                            }
+                            mysqli_close($conn);
+                        }
+                    } else if (isset($_POST['alterarsenha'])) {
+                        $antigo = $_POST['senha1'];
+                        $novo = $_POST['senha2'];
+                        $criptografar = MD5($novo);
+                        if ($antigo == $novo) {
+                            echo "A senha antiga e a nova não podem ser iguais.";
+                        } else {
+                            $sql = "update pessoa set senha = '$criptografar' where cpf = " . $cpf . ";";
+                            if (mysqli_query($conn, $sql)) {
+                                echo "<h3> Alterado com sucesso </h3>";
+                            } else {
+                                echo " <h3> Erro ao alterar: </h3>" . $sql . "<br>" . mysqli_error($conn);
+                            }
+                            mysqli_close($conn);
+                        }
+                    } else if (isset($_POST['excluirconta'])) {
+                        $ok1 = $_POST['confirm1'];
+                        $ok2 = $_POST['confirm2'];
+                        $sql = "delete from pessoa where cpf = " . $cpf . ";";
+                        $sql2 = "delete from vacina where cpf = " . $cpf . ";";
+                        if (mysqli_query($conn, $sql2)) {
+                            if (mysqli_query($conn, $sql)) {
+                                session_destroy();
+                                header("Location: index.php");
+                            }
+                        } else {
+                            echo " <h3> Erro ao alterar: </h3>" . $sql . "<br>" . mysqli_error($conn);
+                        }
+                        mysqli_close($conn);
+                    }
+                    ?>
 
                     <div class="accordion" id="accordionExample">
                         <div class="card">

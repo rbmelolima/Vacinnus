@@ -2,41 +2,44 @@
 return array(
     //Sidebar da área administrativa
     'sidebarADMIN' => '
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center">
-                <div class="sidebar-brand-text mx-3" style="color: white">Vaccinus</div>
-            </a>
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="VACINAS.php">
-                    <span>Vacinas</span></a>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-            <li class="nav-item active">
-                <a class="nav-link" href="COMING.php">
-                    <span>Perfil Médico</span></a>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-            <li class="nav-item active">
-                <a class="nav-link" href="COMING.php">
-                    <span>Enciclopédia</span></a>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-            <li class="nav-item active">
-                <a class="nav-link" href="COMING.php">
-                    <span>Histórico</span></a>
-            </li>
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-        </ul>    
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+    <div class="sidebar-brand-icon">
+        <img src="IMG/drop.png"/>
+    </div>
+    <div class="sidebar-brand-text mx-3">Vaccinus</div>
+    </a>
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+    <a class="nav-link" href="VACINAS.php">
+    <img src="IMG/vaccine.png"/><span> Vacinas</span></a>
+    </li>
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    <li class="nav-item active">
+        <a class="nav-link" href="COMING.php">
+        <img src="IMG/doctor.png"/><span> Perfil Médico</span></a>
+    </li>
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    <li class="nav-item active">
+        <a class="nav-link" href="COMING.php">
+        <img src="IMG/book.png"/><span> Enciclopédia</span></a>
+    </li>
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    <li class="nav-item active">
+        <a class="nav-link" href="COMING.php">
+        <img src="IMG/history.png"/><span> Histórico</span></a>
+    </li>
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+</ul>    
     ',
 
     //rodapé da área administrativa
@@ -44,7 +47,7 @@ return array(
     <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Vaccinus by Roger Bernardo</span>
+            <span>Vaccinus© 2019</span>            
         </div>
     </div>
     </footer>     
@@ -52,7 +55,6 @@ return array(
 
     //header da página inicial e afins
     'headerINDEX' => '    
-
     <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
     <div class="container">
     <a class="navbar-brand" href="index.php">Vaccinus</a>
@@ -88,26 +90,13 @@ return array(
 
     //footer da página inicial e afins
     'footerINDEX' => '   
-    <footer class="pb_footer bg-light" role="contentinfo">
-    <div class="container">
-    <div class="row text-center">
-    <div class="col">
-    <ul class="list-inline">
-    <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-facebook"></i></a></li>
-    <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-github"></i></a></li>
-    <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-linkedin"></i></a></li>
-    </ul>
-    </div>
-    </div>
-    <div>
+    <footer class="pb_footer bg-light" role="contentinfo">    
     <div class="row">
     <div class="col text-center">
-    <p class="pb_font-14">Roger Bernardo de Melo Lima <br> 2019</p>
+    <p class="pb_font-14"><b>Vaccinus©</b><br> 2019</p>
     </div>
     </div>
-    </div>
-    </footer>
-   
+    </footer>   
     ',
 
 );
