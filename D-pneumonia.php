@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vaccinus</title>
     <meta name="description" content="Carteira de vacinação online">
-    <meta name="keywords" content="Carteira de vacinação">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/pattern.css" />
-    <link href="CSS/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <meta name="keywords" content="Carteira de vacinação"> 
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
+    <link rel="stylesheet" href="CSS/fontawesome-free/css/all.css" type="text/css">
+    <link rel="stylesheet" href="CSS/fontawesome-free/css/fontawesome.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ionicons/css/ionicons.css" type="text/css">
 </head>
 
 
@@ -22,7 +24,7 @@
    
 
     <div class="container-head banner">
-        <h1>PNEUMONIA</h1>
+        <h1>Pneumonia</h1>
         <p class="text-desc center"> Infecção que inflama os sacos de ar em um ou ambos os pulmões, que podem ficar cheios de líquido. </p>
     </div>
 

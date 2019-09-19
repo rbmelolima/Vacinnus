@@ -8,11 +8,13 @@
     <title>Vaccinus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/pattern.css" />
-    <link href="CSS/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
+    <link rel="stylesheet" href="CSS/fontawesome-free/css/all.css" type="text/css">
+    <link rel="stylesheet" href="CSS/fontawesome-free/css/fontawesome.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ionicons/css/ionicons.css" type="text/css">
 </head>
 
 
@@ -22,14 +24,14 @@
     
 
     <div class="container-head banner">
-        <h1>POLIOMELITE</h1>
+        <h1>Poliomielite</h1>
         <p class="text-desc center"> Vírus que pode causar paralisia, facilmente evitável por vacinação contra a poliomielite. </p>
     </div>
 
     <div class="container-body">
 
         <section>
-            <h3>O que é Poliomelite</h3>
+            <h3>O que é Poliomielite</h3>
             <p> A Poliomielite, também chamada de pólio ou paralisia infantil, é uma doença contagiosa aguda causada
                 pelo
                 poliovírus, que pode infectar crianças e adultos por meio do contato direto com fezes ou com secreções

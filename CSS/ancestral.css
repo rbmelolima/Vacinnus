@@ -1,0 +1,28 @@
+/*
+Esse arquivo css define as fontes, cores, espaços e o que for mais importante e que deve ser separado das outras
+folhas de estilo
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:400,700|Roboto&display=swap');
+
+body{   
+    line-height: 1.8em;
+    background-color: #FFFFFF;    
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;    
+    margin-bottom: 15px;
+}
+
+p{    
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link{
+    font-family: 'Open Sans', sans-serif;    
+}
+
+.pb_accordion{
+    text-align: justify;
+}

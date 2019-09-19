@@ -34,10 +34,10 @@ return array(
     <li class="nav-item active">
         <a class="nav-link" href="COMING.php">
         <img src="IMG/history.png"/><span> Histórico</span></a>
-    </li>
+    </li>    
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
-    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
     </div>
 </ul>    
     ',
@@ -93,7 +93,7 @@ return array(
     <footer class="pb_footer bg-light" role="contentinfo">    
     <div class="row">
     <div class="col text-center">
-    <p class="pb_font-14"><b>Vaccinus©</b><br> 2019</p>
+    <p class="pb_font-14"><b>Vaccinus ©</b><br> 2019</p>
     </div>
     </div>
     </footer>   

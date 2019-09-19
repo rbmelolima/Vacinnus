@@ -1,13 +1,6 @@
-
-
-/* TAGS HTML */
-
+   
 html {
     overflow-x: hidden;
-}
-
-body {
-    line-height: 1.8em;
 }
 
 input,
@@ -23,15 +16,6 @@ a {
     transition: .3s all ease;
     text-decoration: none;
 }
-
-
-/* FIM DAS TAGS HTML */
-
-
-/* CLASSES AUTORAIS */
-
-
-/* FIM DAS CLASSES AUTORAIS */
 
 .pb_feature-v1,
 .pb_feature-v2 {

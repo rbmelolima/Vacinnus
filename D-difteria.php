@@ -8,28 +8,30 @@
     <title>Vaccinus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/pattern.css" />
-    <link href="CSS/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
+    <link rel="stylesheet" href="CSS/fontawesome-free/css/all.css" type="text/css">
+    <link rel="stylesheet" href="CSS/fontawesome-free/css/fontawesome.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ionicons/css/ionicons.css" type="text/css">
 </head>
 
 <body>
-    
+
     <?php echo $importarhtml["headerINDEX"]; ?>
-    
+
 
 
     <div class="container-head banner">
-        <h1>DIFTERIA</h1>
+        <h1>Difteria</h1>
         <p class="text-desc center"> Infecção grave do nariz e da garganta que pode ser facilmente evitada por meio de vacina. </p>
     </div>
 
     <div class="container-body">
 
         <section>
-            <h3>O que é Difeteria</h3>
+            <h3>O que é Difteria</h3>
             <p> A difteria, também conhecida como "crupe", é uma doença transmissível aguda, toxiinfecciosa e
                 imunoprevenível, causada por bactéria, que se aloja principalmente nas amígdalas, faringe, laringe,
                 nariz e, ocasionalmente, em outras mucosas do corpo, além da pele. A presença de placas

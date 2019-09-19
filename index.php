@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vaccinus</title>
     <meta name="description" content="Carteira de vacinação online">
-    <meta name="keywords" content="Carteira de vacinação">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href="CSS/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <meta name="keywords" content="Carteira de vacinação">    
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
+    <link rel="stylesheet" href="CSS/fontawesome-free/css/all.css" type="text/css">
+    <link rel="stylesheet" href="CSS/fontawesome-free/css/fontawesome.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ionicons/css/ionicons.css" type="text/css">
 </head>
 
 <body>
@@ -235,6 +237,7 @@
     </section>
 
     <?php echo $importarhtml["footerINDEX"]; ?>
+    
     <script src="JS/jquery.min.js"></script>
     <script src="JS/popper.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>

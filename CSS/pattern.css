@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
-/*ELEMENTOS HTML*/
-
-body{   
-    line-height: 1.8em;
-    background-color: #FFFFFF;    
-}
-
-
 section{
     padding-top: 3%;
+    text-align: justify;
 }
 
 section h3{
@@ -17,52 +9,15 @@ section h3{
     border-bottom: 1px solid #20B2AA;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Roboto', sans-serif;    
-    margin-bottom: 15px;
-}
-
-p{
-    text-align: justify;
-    font-family: 'Open Sans', sans-serif;
-}
-
 label{
     font-weight: bold;
     margin-top: 10px;
 }
 
-figcaption{
-    text-align: center;
-    color: gray;
-    font-style: italic;
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-
-/* INDEX */
 .gelo{
     background-color: whitesmoke;
 }
 
-#banner{
-    background-image: url('../IMG/banner.png');
-    height: auto;
-    width: 100%;
-}
-
-.action{
-    text-align: center;    
-    padding-top: 25px;     
-    margin: 20px;    
-}
-
-.action img{
-    width: 25%;
-    height: auto;
-    margin-bottom: 15px;   
-}
 
 .align-center{
     margin: 0 auto;
@@ -74,13 +29,7 @@ figcaption{
     margin-bottom: 15px;
 }
 
-.logo-index{
-    margin: 0 auto;
-    text-align: center;
-    width: 35%;
-}
 
-/*CLASSES*/
 .container-body{
     width: 100%;
     padding: 5% 15%; 
@@ -124,27 +73,13 @@ figcaption{
     margin-bottom: 10px;
 }
 
-.container-login, .container-cadastro{
-    background-color: white;        
-    padding: 4%;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 5%;
-}
-
 .gradiente{
     background-image: linear-gradient(to bottom, transparent, #20B2AA 120%);
     padding-bottom: 100px;
     height: 100%;
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
-    .container-login, .container-cadastro{    
-        width: 90%;        
-    }    
-
+@media (max-width: 767.98px) {     
     .container-body{    
         padding: 5%;        
     }    
