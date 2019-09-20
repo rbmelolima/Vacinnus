@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vaccinus</title>
     <meta name="description" content="Carteira de vacinação online">
-    <meta name="keywords" content="Carteira de vacinação">    
+    <meta name="keywords" content="Carteira de vacinação">
     <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
@@ -237,15 +237,14 @@
     </section>
 
     <?php echo $importarhtml["footerINDEX"]; ?>
-    
+
     <script src="JS/jquery.min.js"></script>
-    <script src="JS/popper.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
-    <script src="JS/slick.min.js"></script>
-    <script src="JS/jquery.mb.YTPlayer.min.js"></script>
-    <script src="JS/jquery.waypoints.min.js"></script>
-    <script src="JS/jquery.easing.1.3.js"></script>
-    <script src="JS/main.js"></script>
+    <script src="JS/jquery.easing.min.js"></script>
+    <script src="JS/chart-area.demo.js"></script>
+    <script src="JS/chart-pie.demo.js"></script>
+    <script src="JS/Chart.min.js"></script>
+    <script src="JS/sb-admin-2.min.js"></script>
 </body>
 
 </html>

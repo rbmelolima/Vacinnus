@@ -10,7 +10,7 @@
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
     <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">   
+    <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
     <link rel="stylesheet" href="CSS/sb-admin-2.css" type="text/css">
     <link rel="stylesheet" href="CSS/fontawesome-free/css/all.css" type="text/css">
     <link rel="stylesheet" href="CSS/fontawesome-free/css/fontawesome.css" type="text/css">
@@ -99,6 +99,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle" src="IMG/user.png" />
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">
                                     <?php
                                     include("CONEXAO.php");
@@ -111,7 +112,7 @@
                                         }
                                     }
                                     ?>
-                                </span>                  
+                                </span>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">

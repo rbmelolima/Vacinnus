@@ -4,18 +4,15 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vaccinus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">   
+    <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
     <link rel="stylesheet" href="CSS/sb-admin-2.css" type="text/css">
-    <link rel="stylesheet" href="CSS/fontawesome-free/css/all.css" type="text/css">
-    <link rel="stylesheet" href="CSS/fontawesome-free/css/fontawesome.css" type="text/css">
-    <link rel="stylesheet" href="CSS/ionicons/css/ionicons.css" type="text/css">
-
+    <link rel="stylesheet" href="CSS/fontawesome-free/css/all.min.css" type="text/css">
+    
     <title>Vaccinus</title>
 
     <?php
@@ -99,6 +96,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle" src="IMG/user.png" />
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">
                                     <?php
                                     include("CONEXAO.php");
@@ -111,7 +109,7 @@
                                         }
                                     }
                                     ?>
-                                </span>                                
+                                </span>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -168,14 +166,12 @@
 
 
     <script src="JS/jquery.min.js"></script>
-    <script src="JS/popper.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
-    <script src="JS/slick.min.js"></script>
-    <script src="JS/jquery.mb.YTPlayer.min.js"></script>
-    <script src="JS/jquery.waypoints.min.js"></script>
-    <script src="JS/jquery.easing.1.3.js"></script>
-    <script src="JS/main.js"></script>
-    <script src="JS/sb-admin-2.js"></script>
+    <script src="JS/jquery.easing.min.js"></script>
+    <script src="JS/chart-area.demo.js"></script>
+    <script src="JS/chart-pie.demo.js"></script>
+    <script src="JS/Chart.min.js"></script>
+    <script src="JS/sb-admin-2.min.js"></script>
 </body>
 
 </html>
