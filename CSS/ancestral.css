@@ -6,23 +6,23 @@ folhas de estilo
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:400,700|Roboto&display=swap');
 
 body{   
-    line-height: 1.8em;
+    line-height: 1.8em !important;
     background-color: #FFFFFF;    
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Open Sans', sans-serif;    
-    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif !important;    
+    margin-bottom: 15px !important;
 }
 
 p{    
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .nav-link{
-    font-family: 'Open Sans', sans-serif;    
+    font-family: 'Open Sans', sans-serif !important;    
 }
 
 .pb_accordion{
-    text-align: justify;
+    text-align: justify !important;
 }

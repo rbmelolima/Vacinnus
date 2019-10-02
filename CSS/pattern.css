@@ -14,11 +14,6 @@ label{
     margin-top: 10px;
 }
 
-.gelo{
-    background-color: whitesmoke;
-}
-
-
 .align-center{
     margin: 0 auto;
 }
@@ -28,7 +23,6 @@ label{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-
 
 .container-body{
     width: 100%;
@@ -41,7 +35,17 @@ label{
 
 .banner{
     text-align: center;
-    background-color: #20B2AA;
+    background: #20B3AB;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #20B3AB 0%, #196FBF 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #20B3AB 0%, #196FBF 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(45deg, #20B3AB 0%, #196FBF 100%);
+    background: linear-gradient(45deg, #20B3AB 0%, #196FBF 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#20B3AB', endColorstr='#196FBF', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */;
     color: white;
     padding: 10%;
 }
@@ -66,17 +70,6 @@ label{
 
 .float-right{
     text-align: right;
-}
-
-.btn{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.gradiente{
-    background-image: linear-gradient(to bottom, transparent, #20B2AA 120%);
-    padding-bottom: 100px;
-    height: 100%;
 }
 
 @media (max-width: 767.98px) {     

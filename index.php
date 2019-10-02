@@ -5,15 +5,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Vaccinus</title>
+    <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="assets/css/helpers.css">   
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <!-- manter sempre por último -->
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
-    <link rel="stylesheet" href="CSS/fontawesome-free/css/all.css" type="text/css">
-    <link rel="stylesheet" href="CSS/fontawesome-free/css/fontawesome.css" type="text/css">
-    <link rel="stylesheet" href="CSS/ionicons/css/ionicons.css" type="text/css">
 </head>
 
 <body>
@@ -23,7 +25,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-6">
-                    <h2 class="heading mb-3">Vaccinus</h2>
+                    <h2 class="heading mb-3">Vacinnus</h2>
                     <div class="sub-heading">
                         <p class="mb-4">Acesse suas vacinas em qualquer lugar, a qualquer momento!</p>
                     </div>
@@ -56,8 +58,8 @@
                         <div class="form-group">
                             <input type="password" class="form-control py-3 reverse" id="senha1" name="senha1" required minlength="5" placeholder="Confirme sua senha">
                         </div>
-                        <button type="submit" class="btn btn-success" name="cadastrar">Cadastrar</button>
-                        <button type="reset" class="btn btn-danger">Limpar</button>
+                        <button type="submit" class="btn btn-primary" name="cadastrar">Cadastrar</button>
+                        <button type="reset" class="btn bg-light">Limpar</button>
                         <br> <br>
                         <p>Tem uma conta?<a href="LOGIN.php"> Faça o login!</a></p>
                     </form>
@@ -70,7 +72,7 @@
     if (isset($_POST['cadastrar'])) {
         //Conectar com o banco de dados
         $servidor = "localhost";
-        $bancodedados = "vaccinus";
+        $bancodedados = "Vacinnus";
         $user = "root";
         $palavrapasse = "";
         $conn = mysqli_connect($servidor, $user, $palavrapasse, $bancodedados);
@@ -163,7 +165,7 @@
                 <div class="col-md">
                     <div id="pb_faq" class="pb_accordion" data-children=".item">
                         <div class="item">
-                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq1" aria-expanded="true" aria-controls="pb_faq1" class="pb_font-22 py-4">O que é o Vaccinus?</a>
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq1" aria-expanded="true" aria-controls="pb_faq1" class="pb_font-22 py-4">O que é o Vacinnus?</a>
                             <div id="pb_faq1" class="collapse show" role="tabpanel">
                                 <div class="py-3">
                                     <p>
@@ -172,7 +174,7 @@
                                         que pode ser facilmente extraviada ou estragada, deixando a pessoa sem esse
                                         importante documento.
                                         Refletindo sobre esse problema, foi proposto desenvolver um projeto com a
-                                        finalidade de repará-lo. Vaccinus é uma aplicação web que procura deixar mais
+                                        finalidade de repará-lo. Vacinnus é uma aplicação web que procura deixar mais
                                         prático e seguro o controle das vacinas tomadas por um
                                         indivíduo, através de uma caderneta online, que pode ser ser acessada por
                                         qualquer dispositivo online conectado à internet.
