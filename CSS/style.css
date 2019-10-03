@@ -1191,14 +1191,14 @@ a {
 }
 
 .pb_section {
-    padding: 9em 2em;
+    padding: 10% 20%;
     position: relative;
     display: block;
 }
 
 @media (max-width: 991px) {
     .pb_section {
-        padding: 4em 0;
+        padding: 10% 5%;
     }
 }
 

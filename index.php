@@ -108,7 +108,7 @@
     }
     ?>
 
-    <section class="pb_section bg-light pb_slant-white pb_pb-250" id="section-features">
+    <section class="pb_section bg-light pb_slant-white" >
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-6 text-center mb-5">
@@ -165,7 +165,7 @@
                 <div class="col-md">
                     <div id="pb_faq" class="pb_accordion" data-children=".item">
                         <div class="item">
-                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq1" aria-expanded="true" aria-controls="pb_faq1" class="pb_font-22 py-4">O que é o Vacinnus?</a>
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq1" aria-expanded="true" aria-controls="pb_faq1" class="pb_font-16 py-4">O que é o Vacinnus?</a>
                             <div id="pb_faq1" class="collapse show" role="tabpanel">
                                 <div class="py-3">
                                     <p>
@@ -183,7 +183,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq2" aria-expanded="false" aria-controls="pb_faq2" class="pb_font-22 py-4">O que são vacinas?</a>
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq2" aria-expanded="false" aria-controls="pb_faq2" class="pb_font-16 py-4">O que são vacinas?</a>
                             <div id="pb_faq2" class="collapse" role="tabpanel">
                                 <div class="py-3">
                                     <p> A vacina é uma importante forma de imunização ativa (quando o próprio corpo
@@ -200,7 +200,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq3" aria-expanded="false" aria-controls="pb_faq3" class="pb_font-22 py-4">Qual a história das vacinas?</a>
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq3" aria-expanded="false" aria-controls="pb_faq3" class="pb_font-16 py-4">Qual a história das vacinas?</a>
                             <div id="pb_faq3" class="collapse" role="tabpanel">
                                 <div class="py-3">
                                     <p>A vacina surgiu em um importante momento histórico de combate à varíola, uma das
@@ -220,7 +220,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq4" aria-expanded="false" aria-controls="pb_faq4" class="pb_font-22 py-4">Qual a importância das vacinas?</a>
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq4" aria-expanded="false" aria-controls="pb_faq4" class="pb_font-16 py-4">Qual a importância das vacinas?</a>
                             <div id="pb_faq4" class="collapse" role="tabpanel">
                                 <div class="py-3">
                                     <p>A vacina é uma importante aliada no controle, combate e eliminação de doenças,

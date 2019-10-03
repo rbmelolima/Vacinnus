@@ -8,11 +8,12 @@
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/sb-admin-2.css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
-    <link rel="stylesheet" href="CSS/sb-admin-2.css" type="text/css">
-    <link rel="stylesheet" href="CSS/fontawesome-free/css/all.min.css" type="text/css">
-    <link rel="stylesheet" href="CSS/fontawesome-free/css/fontawesome.css" type="text/css">
-    <link rel="stylesheet" href="CSS/ionicons/css/ionicons.css" type="text/css">
 
     <?php
     include('segurança.php');
@@ -61,7 +62,7 @@
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
+                        <i class="ion-navicon"></i>
                     </button>
 
                     <!-- Topbar Navbar -->

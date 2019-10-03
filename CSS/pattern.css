@@ -47,7 +47,7 @@ label{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#20B3AB', endColorstr='#196FBF', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */;
     color: white;
-    padding: 10%;
+    padding: 15% 10% 10% 10%;
 }
 
 .middle{

@@ -37,7 +37,7 @@ return array(
     </li>    
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        <button class="rounded-circle border-0" id="sidebarToggle"> <i class="ion-chevron-left"></i></button>
     </div>
 </ul>    
     ',
@@ -90,13 +90,25 @@ return array(
 
     //footer da página inicial e afins
     'footerINDEX' => '   
-    <footer class="pb_footer bg-light" role="contentinfo">    
-    <div class="row">
-    <div class="col text-center">
-    <p class="pb_font-14"><b>Vacinnus ©</b><br> 2019</p>
-    </div>
-    </div>
-    </footer>   
+    <footer class="pb_footer bg-light" role="contentinfo">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.facebook.com/Roger.Bernardo.013" class="p-3"><i class="ion-social-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="https://github.com/RogerBernardo" class="p-3"><i class="ion-social-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/roger-bernardo-de-melo-lima-757082166" class="p-3"><i class="ion-social-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p class="pb_font-14">Vacinnus ©</p>          
+            
+          </div>
+        </div>
+      </div>
+    </footer> 
     ',
 
 );

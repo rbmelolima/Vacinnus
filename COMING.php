@@ -42,7 +42,7 @@
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
+                        <i class="ion-navicon"></i>
                     </button>
 
                     <!-- Topbar Navbar -->
@@ -152,4 +152,5 @@
     <script src="JS/main.js"></script>
     <script src="JS/sb-admin-2.js"></script>
 </body>
+
 </html>
