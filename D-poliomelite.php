@@ -8,11 +8,11 @@
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
@@ -20,9 +20,9 @@
 
 
 <body>
-  
+
     <?php echo $importarhtml["headerINDEX"]; ?>
-    
+
 
     <div class="container-head banner">
         <h1>Poliomielite</h1>
@@ -30,24 +30,30 @@
     </div>
 
     <div class="container-body">
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/poliomielite.jpg" />
+            </div>
 
-        <section>
-            <h3>O que é Poliomielite</h3>
-            <p> A Poliomielite, também chamada de pólio ou paralisia infantil, é uma doença contagiosa aguda causada
-                pelo
-                poliovírus, que pode infectar crianças e adultos por meio do contato direto com fezes ou com secreções
-                eliminadas
-                pela boca das pessoas doentes e provocar ou não paralisia. Nos casos graves, em que acontecem as
-                paralisias musculares,
-                os membros inferiores são os mais atingidos. </p>
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Poliomielite</h3>
+                    <p> A Poliomielite, também chamada de pólio ou paralisia infantil, é uma doença contagiosa aguda causada
+                        pelo
+                        poliovírus, que pode infectar crianças e adultos por meio do contato direto com fezes ou com secreções
+                        eliminadas
+                        pela boca das pessoas doentes e provocar ou não paralisia. Nos casos graves, em que acontecem as
+                        paralisias musculares,
+                        os membros inferiores são os mais atingidos. </p>
 
-            <p> Embora ocorra com maior frequência em crianças menores de quatro anos, também pode ocorrer em adultos. O
-                período de incubação
-                da doença varia de dois a trinta dias sendo, em geral, de sete a doze dias.
-            </p>
-
-        </section>
-
+                    <p> Embora ocorra com maior frequência em crianças menores de quatro anos, também pode ocorrer em adultos. O
+                        período de incubação
+                        da doença varia de dois a trinta dias sendo, em geral, de sete a doze dias.
+                    </p>
+                </section>
+            </div>
+        </div>
+        
         <section>
             <h3>Sintomas</h3>
             <ul>

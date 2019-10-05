@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
-    <meta name="keywords" content="Carteira de vacinação"> 
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <meta name="keywords" content="Carteira de vacinação">
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
@@ -20,9 +20,8 @@
 
 
 <body>
-    
+
     <?php echo $importarhtml["headerINDEX"]; ?>
-   
 
     <div class="container-head banner">
         <h1>Pneumonia</h1>
@@ -30,22 +29,31 @@
     </div>
 
     <div class="container-body">
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/pneumonia.jpg" />
+            </div>
 
-        <section>
-            <h3>O que é Pneumonia</h3>
-            <p> Pneumonia é uma infecção que se instala nos pulmões, podendo acometer a região dos alvéolos pulmonares.
-                Alguns sintomas da doença são: febre alta
-                (acima de 37,5° C), tosse seca ou com catarro de cor amarelada ou esverdeada, falta de ar e dificuldade
-                de respirar.
-            </p>
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Pneumonia</h3>
+                    <p> Pneumonia é uma infecção que se instala nos pulmões, podendo acometer a região dos alvéolos pulmonares.
+                        Alguns sintomas da doença são: febre alta
+                        (acima de 37,5° C), tosse seca ou com catarro de cor amarelada ou esverdeada, falta de ar e dificuldade
+                        de respirar.
+                    </p>
 
-            <p> Basicamente, pneumonias são provocadas pela penetração de um agente infeccioso ou irritante (bactérias,
-                vírus, fungos e por reações alérgicas) no espaço
-                alveolar, onde ocorre a troca gasosa. Esse local deve estar sempre muito limpo, livre de substâncias que
-                possam impedir o contato do ar com o sangue.
-            </p>
+                    <p> Basicamente, pneumonias são provocadas pela penetração de um agente infeccioso ou irritante (bactérias,
+                        vírus, fungos e por reações alérgicas) no espaço
+                        alveolar, onde ocorre a troca gasosa. Esse local deve estar sempre muito limpo, livre de substâncias que
+                        possam impedir o contato do ar com o sangue.
+                    </p>
 
-        </section>
+                </section>
+            </div>
+        </div>
+
+
 
         <section>
             <h3>Sintomas</h3>

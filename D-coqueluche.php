@@ -8,21 +8,19 @@
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
 
 <body>
-    
-    <?php echo $importarhtml["headerINDEX"]; ?>
-    
 
+    <?php echo $importarhtml["headerINDEX"]; ?>
 
     <div class="container-head banner">
         <h1>Coqueluche</h1>
@@ -30,22 +28,29 @@
     </div>
 
     <div class="container-body">
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/coqueluche.jpg" />
+            </div>
 
-        <section>
-            <h3>O que é Coqueluche</h3>
-            <p> A coqueluche é uma doença infecciosa aguda, transmissível e de distribuição universal. É provocada pelo
-                bacilo Bordetella pertussis e compromete especificamente o aparelho respiratório da pessoa,
-                o que inclui traqueia e brônquios. A principal característica é a tosse seca.
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Coqueluche</h3>
+                    <p> A coqueluche é uma doença infecciosa aguda, transmissível e de distribuição universal. É provocada pelo
+                        bacilo Bordetella pertussis e compromete especificamente o aparelho respiratório da pessoa,
+                        o que inclui traqueia e brônquios. A principal característica é a tosse seca.
 
-            </p>
+                    </p>
 
-            <p> O ser humano é o único reservatório natural do bacilo causador da coqueluche. Apesar de ainda não ter
-                sido constatada a existência de portadores crônicos da doença, podem ocorrer casos sem sintomas
-                e/ou com pouca importância na disseminação da infecção.
-            </p>
+                    <p> O ser humano é o único reservatório natural do bacilo causador da coqueluche. Apesar de ainda não ter
+                        sido constatada a existência de portadores crônicos da doença, podem ocorrer casos sem sintomas
+                        e/ou com pouca importância na disseminação da infecção.
+                    </p>
 
-        </section>
-
+                </section>
+            </div>
+        </div>
+        
         <section>
             <h3>Sintomas</h3>
             <ul>

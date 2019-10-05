@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
-    <meta name="keywords" content="Carteira de vacinação"> 
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <meta name="keywords" content="Carteira de vacinação">
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
@@ -20,10 +20,8 @@
 
 
 <body>
-    
     <?php echo $importarhtml["headerINDEX"]; ?>
 
-    
     <div class="container-head banner">
         <h1>Rubéola</h1>
         <p class="text-desc center"> Infecção viral contagiosa evitável por vacina e conhecida pela sua erupção vermelha característica. </p>
@@ -31,20 +29,28 @@
 
     <div class="container-body">
 
-        <section>
-            <h3>O que é Rubéola</h3>
-            <p> A rubéola é uma doença aguda, de alta contagiosidade, que é transmitida pelo vírus do gênero Rubivirus,
-                da família Togaviridae.
-                A doença também é conhecida como “Sarampo Alemão”.
-            </p>
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/rubeola.jpg" />
+            </div>
 
-            <p> No campo das doenças infecto-contagiosas, a importância epidemiológica da Rubéola está representada pela
-                ocorrência da Síndrome
-                da Rubéola Congênita (SRC) que atinge o feto ou o recém-nascido cujas mães se infectaram durante a
-                gestação.
-            </p>
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Rubéola</h3>
+                    <p> A rubéola é uma doença aguda, de alta contagiosidade, que é transmitida pelo vírus do gênero Rubivirus,
+                        da família Togaviridae.
+                        A doença também é conhecida como “Sarampo Alemão”.
+                    </p>
 
-        </section>
+                    <p> No campo das doenças infecto-contagiosas, a importância epidemiológica da Rubéola está representada pela
+                        ocorrência da Síndrome
+                        da Rubéola Congênita (SRC) que atinge o feto ou o recém-nascido cujas mães se infectaram durante a
+                        gestação.
+                    </p>
+
+                </section>
+            </div>
+        </div>
 
         <section>
             <h3>Sintomas</h3>

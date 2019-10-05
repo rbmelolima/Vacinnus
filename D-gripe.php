@@ -8,11 +8,11 @@
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
@@ -28,24 +28,30 @@
     </div>
 
     <div class="container-body">
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/gripe.jpg" />
+            </div>
 
-        <section>
-            <h3>O que é Gripe</h3>
-            <p> A gripe (Influenza) é uma infecção aguda do sistema respiratório, provocado pelo vírus da influenza, com
-                grande potencial de transmissão. Inicia-se com febre, dor no corpo, e tosse seca. Normalmente, tem
-                evolução por
-                tempo limitado, durando de um a quatro dias, mas pode se apresentar forma grave. O Sistema Único de
-                Saúde (SUS) concede de forma gratuita a vacina que protege contra os tipos A e B do vírus
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Gripe</h3>
+                    <p> A gripe (Influenza) é uma infecção aguda do sistema respiratório, provocado pelo vírus da influenza, com
+                        grande potencial de transmissão. Inicia-se com febre, dor no corpo, e tosse seca. Normalmente, tem
+                        evolução por
+                        tempo limitado, durando de um a quatro dias, mas pode se apresentar forma grave. O Sistema Único de
+                        Saúde (SUS) concede de forma gratuita a vacina que protege contra os tipos A e B do vírus.
+                    </p>
 
-            </p>
+                    <p> O vírus da gripe (Influenza) propaga-se facilmente e é responsável por elevadas taxas de hospitalização.
+                        Idosos, crianças, gestantes e pessoas com doenças crônicas, como diabetes e hipertensão, ou
+                        imunodeficiência são
+                        mais vulneráveis aos vírus.
+                    </p>
 
-            <p> O vírus da gripe (Influenza) propaga-se facilmente e é responsável por elevadas taxas de hospitalização.
-                Idosos, crianças, gestantes e pessoas com doenças crônicas, como diabetes e hipertensão, ou
-                imunodeficiência são
-                mais vulneráveis aos vírus.
-            </p>
-
-        </section>
+                </section>
+            </div>
+        </div>
 
         <section>
             <h3>Sintomas</h3>

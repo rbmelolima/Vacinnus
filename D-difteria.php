@@ -8,11 +8,11 @@
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
@@ -22,38 +22,43 @@
 
     <?php echo $importarhtml["headerINDEX"]; ?>
 
-
-
     <div class="container-head banner">
         <h1>Difteria</h1>
         <p class="text-desc center"> Infecção grave do nariz e da garganta que pode ser facilmente evitada por meio de vacina. </p>
     </div>
 
     <div class="container-body">
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/difteria.jpg" />
+            </div>
 
-        <section>
-            <h3>O que é Difteria</h3>
-            <p> A difteria, também conhecida como "crupe", é uma doença transmissível aguda, toxiinfecciosa e
-                imunoprevenível, causada por bactéria, que se aloja principalmente nas amígdalas, faringe, laringe,
-                nariz e, ocasionalmente, em outras mucosas do corpo, além da pele. A presença de placas
-                pseudomembranosas branco-acinzentadas, aderentes, que se instalam nas amígdalas e invadem estruturas
-                vizinhas, é a manifestação clínica típica da difteria. Em casos mais severos, que são raros, pode
-                ocorrer um inchaço grave no pescoço, com aumento dos gânglios linfáticos, gerando dificuldade
-                de respirar ou até mesmo bloqueio total da respiração.
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Difteria</h3>
+                    <p> A difteria, também conhecida como "crupe", é uma doença transmissível aguda, toxiinfecciosa e
+                        imunoprevenível, causada por bactéria, que se aloja principalmente nas amígdalas, faringe, laringe,
+                        nariz e, ocasionalmente, em outras mucosas do corpo, além da pele. A presença de placas
+                        pseudomembranosas branco-acinzentadas, aderentes, que se instalam nas amígdalas e invadem estruturas
+                        vizinhas, é a manifestação clínica típica da difteria. Em casos mais severos, que são raros, pode
+                        ocorrer um inchaço grave no pescoço, com aumento dos gânglios linfáticos, gerando dificuldade
+                        de respirar ou até mesmo bloqueio total da respiração.
 
-            </p>
+                    </p>
 
-            <p> A difteria ocorre durante todos os períodos do ano e pode afetar todas as pessoas não imunizadas, de
-                qualquer idade, raça ou sexo. Observa-se um aumento de sua incidência nos meses frios e secos
-                (outono e inverno), quando é mais comum a ocorrência de infecções respiratórias, principalmente devido à
-                aglomeração em ambientes fechados, que facilitam a transmissão do bacilo. Contudo, não se
-                observa esse padrão sazonal nas regiões sem grandes oscilações de temperatura. A doença ocorre com maior
-                frequência em áreas com precárias condições socioeconômicas, onde a aglomeração de pessoas
-                é maior e onde se registram baixas coberturas vacinais. Os casos são raros quando as coberturas vacinais
-                atingem patamares de 80%.
-            </p>
+                    <p> A difteria ocorre durante todos os períodos do ano e pode afetar todas as pessoas não imunizadas, de
+                        qualquer idade, raça ou sexo. Observa-se um aumento de sua incidência nos meses frios e secos
+                        (outono e inverno), quando é mais comum a ocorrência de infecções respiratórias, principalmente devido à
+                        aglomeração em ambientes fechados, que facilitam a transmissão do bacilo. Contudo, não se
+                        observa esse padrão sazonal nas regiões sem grandes oscilações de temperatura. A doença ocorre com maior
+                        frequência em áreas com precárias condições socioeconômicas, onde a aglomeração de pessoas
+                        é maior e onde se registram baixas coberturas vacinais. Os casos são raros quando as coberturas vacinais
+                        atingem patamares de 80%.
+                    </p>
 
-        </section>
+                </section>
+            </div>
+        </div>
 
         <section>
             <h3>Sintomas</h3>

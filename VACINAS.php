@@ -174,7 +174,7 @@
                                 echo "<div class=\"conteudo\">";
                                 echo "<input type='hidden' value='" . $row['ID'] . "' name='vacinaid' />"; //added                           
                                 echo "<p><span class=\"bold\"> Data: </span>" .  data($row['dia']) . "</p>";
-                                echo "<p><span class=\"bold\"> Código: </span>" .  $row['codigo'] . "</p>";
+                                echo "<p><span class=\"bold\"> Lote: </span>" .  $row['codigo'] . "</p>";
                                 echo "<p><span class=\"bold\"> Dose: </span>" . $row['dose'] . " dose(s)</p>";
                                 echo "<p><span class=\"bold\"> Lugar: </span>" .  $row['lugar'] . "</p>";
                                 echo "<a href='ALTERARVACINAS.php?id=" . $row['ID'] . "' class='btn btn-primary' name=\"id\">Editar</a>";
@@ -190,11 +190,11 @@
                             $data = $_POST['data'];
                             $local = $_POST['local'];
                             $dose = $_POST['dose'];
-                            $codigo = $_POST['codigo'];
+                            $lote = $_POST['lote'];
                             $cpf = $_SESSION['cpf'];
 
-                            if ($vacina != null && $data != null && $local != null && $dose != null && $codigo != null) {
-                                $sql = "insert into vacina (nome, lugar, dia, codigo, dose, cpf) values ('$vacina','$local','$data' ,'$codigo', '$dose', '$cpf');";
+                            if ($vacina != null && $data != null && $local != null && $dose != null && $lote != null) {
+                                $sql = "insert into vacina (nome, lugar, dia, codigo, dose, cpf) values ('$vacina','$local','$data' ,'$lote', '$dose', '$cpf');";
 
                                 if (mysqli_query($conn, $sql)) {
                                     echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=VACINAS.php'>";
@@ -255,7 +255,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="codigo" name="codigo" placeholder="codigo">
+                                        <input type="text" class="form-control" id="lote" name="lote" placeholder="Lote">
                                     </div>
 
                                     <div class="form-group">

@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
-    <meta name="keywords" content="Carteira de vacinação"> 
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <meta name="keywords" content="Carteira de vacinação">
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
 
 
-<body>    
-    <?php echo $importarhtml["headerINDEX"]; ?>  
+<body>
+    <?php echo $importarhtml["headerINDEX"]; ?>
 
     <div class="container-head banner">
         <h1>Sarampo</h1>
@@ -29,25 +29,32 @@
 
     <div class="container-body">
 
-        <section>
-            <h3>O que é Sarampo</h3>
-            <p> O sarampo é uma doença infecciosa aguda, de natureza viral, grave, transmitida pela fala, tosse e
-                espirro, e extremamente
-                contagiosa, mas que pode ser prevenida pela vacina. Pode ser contraída por pessoas de qualquer idade. As
-                complicações infecciosas
-                contribuem para a gravidade da doença, particularmente em crianças desnutridas e menores de um ano de
-                idade. Em algumas partes do
-                mundo, a doença é uma das principais causas de morbimortalidade entre crianças menores de 5 anos de
-                idade. </p>
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/sarampo.jpg" />
+            </div>
 
-            <p> O comportamento endêmico do sarampo varia, de um local para outro, e depende basicamente da relação
-                entre o grau de imunidade e a
-                suscetibilidade da população, além da circulação do vírus na área. O agente envolvido na causa da doença
-                é o Vírus do Sarampo, que pertence
-                ao gênero Morbillivirus, da família Paramyxoviridae.
-            </p>
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Sarampo</h3>
+                    <p> O sarampo é uma doença infecciosa aguda, de natureza viral, grave, transmitida pela fala, tosse e
+                        espirro, e extremamente
+                        contagiosa, mas que pode ser prevenida pela vacina. Pode ser contraída por pessoas de qualquer idade. As
+                        complicações infecciosas
+                        contribuem para a gravidade da doença, particularmente em crianças desnutridas e menores de um ano de
+                        idade. Em algumas partes do
+                        mundo, a doença é uma das principais causas de morbimortalidade entre crianças menores de 5 anos de
+                        idade. </p>
 
-        </section>
+                    <p> O comportamento endêmico do sarampo varia, de um local para outro, e depende basicamente da relação
+                        entre o grau de imunidade e a
+                        suscetibilidade da população, além da circulação do vírus na área. O agente envolvido na causa da doença
+                        é o Vírus do Sarampo, que pertence
+                        ao gênero Morbillivirus, da família Paramyxoviridae.
+                    </p>
+                </section>
+            </div>
+        </div>
 
         <section>
             <h3>Sintomas</h3>

@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
-    <meta name="keywords" content="Carteira de vacinação">   
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <meta name="keywords" content="Carteira de vacinação">
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
 
 <body>
-  
-    <?php echo $importarhtml["headerINDEX"]; ?>  
+
+    <?php echo $importarhtml["headerINDEX"]; ?>
 
 
     <div class="container-head banner">
@@ -29,25 +29,33 @@
     </div>
 
     <div class="container-body">
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/meningite.jpg" />
+            </div>
 
-        <section>
-            <h3>O que é Meningite</h3>
-            <p> A meningite é um processo inflamatório das meninges, membranas que envolvem o cérebro e a medula
-                espinhal. Pode ser causada por diversos agentes infecciosos, ou também por processos não infecciosos
-                como,
-                por exemplo, medicamentos e neoplasias. Entre os agentes infecciosos, as meningites bacterianas e virais
-                são as mais importantes do ponto de vista da saúde pública e clinico, devido a sua magnitude, capacidade
-                de causar surtos e, no caso da meningite bacteriana, a gravidade.
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Meningite</h3>
+                    <p> A meningite é um processo inflamatório das meninges, membranas que envolvem o cérebro e a medula
+                        espinhal. Pode ser causada por diversos agentes infecciosos, ou também por processos não infecciosos
+                        como,
+                        por exemplo, medicamentos e neoplasias. Entre os agentes infecciosos, as meningites bacterianas e virais
+                        são as mais importantes do ponto de vista da saúde pública e clinico, devido a sua magnitude, capacidade
+                        de causar surtos e, no caso da meningite bacteriana, a gravidade.
 
-            </p>
+                    </p>
 
-            <p> No Brasil, a meningite é considerada uma doença endêmica, deste modo, casos da doença são esperados ao
-                longo de todo o ano, com a ocorrência de surtos e epidemias ocasionais. A ocorrência das meningites
-                bacterianas
-                é mais comum no outono-inverno, e das virais na primavera-verão.
-            </p>
+                    <p> No Brasil, a meningite é considerada uma doença endêmica, deste modo, casos da doença são esperados ao
+                        longo de todo o ano, com a ocorrência de surtos e epidemias ocasionais. A ocorrência das meningites
+                        bacterianas
+                        é mais comum no outono-inverno, e das virais na primavera-verão.
+                    </p>
 
-        </section>
+                </section>
+            </div>
+        </div>
+
 
         <section>
             <h3>Sintomas</h3>

@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
-    <meta name="keywords" content="Carteira de vacinação">  
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <meta name="keywords" content="Carteira de vacinação">
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
@@ -20,9 +20,9 @@
 
 
 <body>
-    
+
     <?php echo $importarhtml["headerINDEX"]; ?>
-    
+
 
     <div class="container-head banner">
         <h1>Hepatite</h1>
@@ -31,21 +31,28 @@
 
     <div class="container-body">
 
-        <section>
-            <h3>O que é Hepatite</h3>
-            <p> A hepatite é a inflamação do fígado. Pode ser causada por vírus ou pelo uso de alguns remédios, álcool e
-                outras drogas, assim como por doenças autoimunes, metabólicas e genéticas. Em alguns casos, são doenças
-                silenciosas que nem sempre apresentam sintomas.
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/hepatite.jpg" />
+            </div>
 
-            </p>
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Hepatite</h3>
+                    <p> A hepatite é a inflamação do fígado. Pode ser causada por vírus ou pelo uso de alguns remédios, álcool e
+                        outras drogas, assim como por doenças autoimunes, metabólicas e genéticas. Em alguns casos, são doenças
+                        silenciosas que nem sempre apresentam sintomas.
 
-            <p> NAs hepatites virais são inflamações causadas por vírus que são classificados por letras do alfabeto em
-                A, B, C, D (Delta) e E. No Brasil, mais de 70% (23.070) dos óbitos por hepatites virais são decorrentes
-                da
-                Hepatite C, seguido da Hepatite B (21,8%) e A (1,7%).
-            </p>
+                    </p>
 
-        </section>
+                    <p> NAs hepatites virais são inflamações causadas por vírus que são classificados por letras do alfabeto em
+                        A, B, C, D (Delta) e E. No Brasil, mais de 70% (23.070) dos óbitos por hepatites virais são decorrentes
+                        da
+                        Hepatite C, seguido da Hepatite B (21,8%) e A (1,7%).
+                    </p>
+                </section>
+            </div>
+        </div>
 
         <section>
             <h3>Sintomas</h3>

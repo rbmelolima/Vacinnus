@@ -162,15 +162,15 @@
                         $data = $_POST['data'];
                         $local = $_POST['local'];
                         $dose = $_POST['dose'];
-                        $codigo = $_POST['codigo'];
+                        $lote = $_POST['lote'];
 
-                        if ($vacina != null && $data != null && $local != null && $dose != null && $codigo != null) {
+                        if ($vacina != null && $data != null && $local != null && $dose != null && $lote != null) {
                             $sql = "UPDATE vacina set nome = '{$vacina}', lugar = '{$local}', dia = '{$data}',
-                            codigo = '{$codigo}' where ID = " .  $_GET['id'] . " AND cpf = '{$cpf}';";
+                            codigo = '{$lote}' where ID = " .  $_GET['id'] . " AND cpf = '{$cpf}';";
 
                             $result = mysqli_query($conn, $sql);
                             if ($result) {
-                                echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=CONSULTA.php'>";
+                                echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=VACINAS.php'>";
                             } else {
                                 echo "<div class=\"alert alert-danger\" role=\"alert\"> Erro </div>";
                             }
@@ -217,7 +217,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="codigo" name="codigo" placeholder="codigo" value="<?php echo $row['codigo']; ?>">
+                                    <input type="text" class="form-control" id="lote" name="lote" placeholder="Lote" value="<?php echo $row['codigo']; ?>">
                                 </div>
 
                                 <div class="form-group">

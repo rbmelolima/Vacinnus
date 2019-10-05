@@ -8,20 +8,18 @@
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
 
 <body>
-
     <?php echo $importarhtml["headerINDEX"]; ?>
-
 
     <div class="container-head banner">
         <h1>Caxumba</h1>
@@ -29,24 +27,30 @@
     </div>
 
     <div class="container-body">
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/caxumba.jpg" />
+            </div>
 
-        <section>
-            <h3>O que é Caxumba</h3>
-            <p> A caxumba é uma infecção viral aguda e contagiosa. Pode atingir qualquer tecido glandular e nervoso do
-                corpo humano, mas é mais comum afetar as glândulas parótidas, que produzem a saliva, ou as
-                submandibulares
-                e sublinguais, próximas ao ouvido. A caxumba, também conhecida como Papeira, é uma doença de
-                distribuição
-                universal, de alta morbidade e baixa letalidade, aparecendo sob a forma endêmica ou surtos.
-            </p>
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Caxumba</h3>
+                    <p> A caxumba é uma infecção viral aguda e contagiosa. Pode atingir qualquer tecido glandular e nervoso do
+                        corpo humano, mas é mais comum afetar as glândulas parótidas, que produzem a saliva, ou as
+                        submandibulares
+                        e sublinguais, próximas ao ouvido. A caxumba, também conhecida como Papeira, é uma doença de
+                        distribuição
+                        universal, de alta morbidade e baixa letalidade, aparecendo sob a forma endêmica ou surtos.
+                    </p>
 
-            <p> É mais comum em crianças no período escolar e em adolescentes, mas também pode afetar adultos em
-                qualquer idade.
-                Normalmente, a caxumba tem evolução benigna, mas em alguns raros casos pode apresentar complicações
-                resultando em internações e até mesmo em morte.
-            </p>
-
-        </section>
+                    <p> É mais comum em crianças no período escolar e em adolescentes, mas também pode afetar adultos em
+                        qualquer idade.
+                        Normalmente, a caxumba tem evolução benigna, mas em alguns raros casos pode apresentar complicações
+                        resultando em internações e até mesmo em morte.
+                    </p>
+                </section>
+            </div>
+        </div>
 
         <section>
             <h3>Sintomas</h3>

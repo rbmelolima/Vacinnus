@@ -8,11 +8,11 @@
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
@@ -23,41 +23,45 @@
 
     <?php echo $importarhtml["headerINDEX"]; ?>
 
-
-
     <div class="container-head banner">
         <h1>Febre Amarela</h1>
         <p class="text-desc center"> Infecção viral transmitida por uma espécie particular de mosquito. </p>
     </div>
 
     <div class="container-body">
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/febreamarela.jpg" />
+            </div>
 
-        <section>
-            <h3>O que é Febre Amarela</h3>
-            <p> A febre amarela é uma doença infecciosa febril aguda, causada por um vírus transmitido por mosquitos
-                vetores, e possui dois ciclos de transmissão:
-                silvestre (quando há transmissão em área rural ou de floresta) e urbano. O vírus é transmitido pela
-                picada dos mosquitos transmissores infectados e
-                não há transmissão direta de pessoa a pessoa. A febre amarela tem importância epidemiológica por sua
-                gravidade clínica e potencial de disseminação em
-                áreas urbanas infestadas pelo mosquito Aedes aegypti.
-            </p>
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Febre Amarela</h3>
+                    <p> A febre amarela é uma doença infecciosa febril aguda, causada por um vírus transmitido por mosquitos
+                        vetores, e possui dois ciclos de transmissão:
+                        silvestre (quando há transmissão em área rural ou de floresta) e urbano. O vírus é transmitido pela
+                        picada dos mosquitos transmissores infectados e
+                        não há transmissão direta de pessoa a pessoa. A febre amarela tem importância epidemiológica por sua
+                        gravidade clínica e potencial de disseminação em
+                        áreas urbanas infestadas pelo mosquito Aedes aegypti.
+                    </p>
 
-            <p> O padrão temporal de ocorrência é sazonal, com a maior parte dos casos incidindo entre dezembro e maio,
-                e com surtos que ocorrem com periodicidade
-                irregular, quando o vírus encontra condições favoráveis para a transmissão (elevadas temperatura e
-                pluviosidade; alta densidade de vetores e
-                hospedeiros primários; presença de indivíduos suscetíveis; baixas coberturas vacinais; eventualmente,
-                novas linhagens do vírus), podendo se dispersar para além dos limites da área endêmica.
+                    <p> O padrão temporal de ocorrência é sazonal, com a maior parte dos casos incidindo entre dezembro e maio,
+                        e com surtos que ocorrem com periodicidade
+                        irregular, quando o vírus encontra condições favoráveis para a transmissão (elevadas temperatura e
+                        pluviosidade; alta densidade de vetores e
+                        hospedeiros primários; presença de indivíduos suscetíveis; baixas coberturas vacinais; eventualmente,
+                        novas linhagens do vírus), podendo se dispersar para além dos limites da área endêmica.
 
-                É uma doença de notificação compulsória imediata, ou seja, todo evento suspeito (tanto morte de primatas
-                não humanos, quanto casos humanos com
-                sintomatologia compatível) deve ser prontamente comunicado, em até 24 horas após a suspeita inicial, às
-                autoridades locais competentes pela via mais rápida (telefone, fax, email, etc).
-            </p>
-
-        </section>
-
+                        É uma doença de notificação compulsória imediata, ou seja, todo evento suspeito (tanto morte de primatas
+                        não humanos, quanto casos humanos com
+                        sintomatologia compatível) deve ser prontamente comunicado, em até 24 horas após a suspeita inicial, às
+                        autoridades locais competentes pela via mais rápida (telefone, fax, email, etc).
+                    </p>
+                </section>
+            </div>
+        </div>
+        
         <section>
             <h3>Sintomas</h3>
             <ul>
