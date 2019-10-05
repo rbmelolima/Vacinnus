@@ -1,12 +1,14 @@
-CREATE SCHEMA `vaccinus` DEFAULT CHARACTER SET latin1 COLLATE latin1_general_cs; 
+CREATE SCHEMA `vacinnus` DEFAULT CHARACTER SET utf8;
 
-use vaccinus;
+use vacinnus;
 drop table pessoa;
 drop table vacina;
 drop table perfilmedico;
+drop database vaccinus;
 select * from pessoa;
-delete from pessoa;
 select * from vacina;
+delete from pessoa;
+delete from vacina;
 
 create table pessoa(
 nome varchar(100) not null,

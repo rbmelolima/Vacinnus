@@ -154,49 +154,57 @@
                     <?php
                     include("CONEXAO.php");
                     $cpf = $_SESSION['cpf'];
+
                     if (isset($_POST['alteraremail'])) {
                         $antigo = $_POST['email1'];
                         $novo = $_POST['email2'];
                         if ($antigo == $novo) {
-                            echo "O email antigo e o novo não podem ser iguais.";
+                            echo "<div class=\"alert alert-warning\" role=\"alert\"> O email antigo e o novo não podem ser iguais!  </div>";
+                        } else if ($antigo != null && $novo != null) {
+                            echo "<div class=\"alert alert-warning\" role=\"alert\"> Os campos não podem estar vazios! </div>";
                         } else {
                             $sql = "update pessoa set email = '$novo' where cpf = " . $cpf . ";";
                             if (mysqli_query($conn, $sql)) {
-                                echo "<h3> Alterado com sucesso </h3>";
+                                echo "<div class=\"alert alert-success\" role=\"alert\"> Sucesso </div>";
                             } else {
-                                echo " <h3> Erro ao alterar: </h3>" . $sql . "<br>" . mysqli_error($conn);
+                                echo "<div class=\"alert alert-danger\" role=\"alert\"> Erro ao alterar </div>";
                             }
                             mysqli_close($conn);
                         }
-                    } else if (isset($_POST['alterarsenha'])) {
+                    }
+
+                    if (isset($_POST['alterarsenha'])) {
                         $antigo = $_POST['senha1'];
                         $novo = $_POST['senha2'];
                         $criptografar = MD5($novo);
-                        if ($antigo == $novo) {
-                            echo "A senha antiga e a nova não podem ser iguais.";
-                        } else {
+                        if ($antigo != $novo && $antigo != null && $novo != null) {
                             $sql = "update pessoa set senha = '$criptografar' where cpf = " . $cpf . ";";
                             if (mysqli_query($conn, $sql)) {
-                                echo "<h3> Alterado com sucesso </h3>";
+                                echo "<div class=\"alert alert-success\" role=\"alert\"> Sucesso </div>";
                             } else {
-                                echo " <h3> Erro ao alterar: </h3>" . $sql . "<br>" . mysqli_error($conn);
+                                echo "<div class=\"alert alert-danger\" role=\"alert\"> Erro ao alterar </div>";
                             }
                             mysqli_close($conn);
                         }
-                    } else if (isset($_POST['excluirconta'])) {
+                    }
+
+                    if (isset($_POST['excluirconta'])) {
                         $ok1 = $_POST['confirm1'];
                         $ok2 = $_POST['confirm2'];
-                        $sql = "delete from pessoa where cpf = " . $cpf . ";";
-                        $sql2 = "delete from vacina where cpf = " . $cpf . ";";
-                        if (mysqli_query($conn, $sql2)) {
-                            if (mysqli_query($conn, $sql)) {
-                                session_destroy();
-                                header("Location: index.php");
+
+                        if ($ok1 != null && $ok2 != null && ($ok1 == $ok2)) {
+                            $sql = "delete from pessoa where cpf = " . $cpf . ";";
+                            $sql2 = "delete from vacina where cpf = " . $cpf . ";";
+                            if (mysqli_query($conn, $sql2)) {
+                                if (mysqli_query($conn, $sql)) {
+                                    session_destroy();
+                                    header("Location: index.php");
+                                }
+                            } else {
+                                echo "<div class=\"alert alert-danger\" role=\"alert\"> Erro ao excluir </div>";
                             }
-                        } else {
-                            echo " <h3> Erro ao alterar: </h3>" . $sql . "<br>" . mysqli_error($conn);
+                            mysqli_close($conn);
                         }
-                        mysqli_close($conn);
                     }
                     ?>
 
@@ -238,16 +246,17 @@
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" id="senha1" name="senha1" placeholder="Insira sua antiga senha">
-                                    </div>
+                                    <form action="" method="post">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="senha1" name="senha1" placeholder="Insira sua antiga senha">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" id="senha2" name="senha2" placeholder="Insira sua nova senha">
-                                    </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="senha2" name="senha2" placeholder="Insira sua nova senha">
+                                        </div>
 
-                                    <button type="submit" class="btn btn-success" name="alterarsenha"> Alterar </button>
-                                    <button type="reset" class="btn btn-danger">Limpar</button>
+                                        <button type="submit" class="btn btn-success" name="alterarsenha"> Alterar </button>
+                                        <button type="reset" class="btn btn-danger">Limpar</button>
                                     </form>
                                 </div>
                             </div>
@@ -271,8 +280,7 @@
                                             <input type="password" class="form-control" id="confirm2" name="confirm2" placeholder="Confirme sua senha">
                                         </div>
 
-                                        <button type="submit" class="btn btn-success" name="excluirconta"> Excluir
-                                        </button>
+                                        <button type="submit" class="btn btn-success" name="excluirconta"> Excluir </button>
                                         <button type="reset" class="btn btn-danger">Limpar</button>
                                     </form>
                                 </div>

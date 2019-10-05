@@ -22,6 +22,8 @@
     include('segurança.php');
     proteger();
     ?>
+
+   
 </head>
 
 <body id="page-top">
@@ -133,6 +135,12 @@
 
                     <div class="card" style="color: black">
                         <?php
+
+                        function data($data)
+                        {
+                            return date("d/m/Y", strtotime($data));
+                        }
+
                         include("CONEXAO.php");
                         $cpf = $_SESSION['cpf'];
                         $sql = "SELECT * FROM pessoa WHERE cpf = '$cpf'";
@@ -141,13 +149,15 @@
 
                         if ($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
+                                echo "<div class=\"card-profile\">";
                                 echo "<div class=\"card-header\"> <h2>" . $row['nome'] . "</h2> </div>";
                                 echo "<div class=\"card-body\">";
                                 echo "<p><bold>Email: </bold>" . $row['email'] . "</p>";
-                                echo "<p><bold>Data de Nascimento: </bold>" . $row['datanasc'] . "</p>";
+                                echo "<p><bold>Data de Nascimento: </bold>" . data($row['datanasc']) . "</p>";
                                 echo "<p><bold>CPF: </bold>" . $row['cpf'] . "</p>";
                                 echo "<p><bold>CEP: </bold>" . $row['cep'] . "</p>";
                                 echo "<p><bold>Telefone: </bold>" . $row['celular'] . "</p>";
+                                echo "</div>";
                                 echo "</div>";
                             }
                         }

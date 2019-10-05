@@ -152,6 +152,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <?php
+
+                        function data($data)
+                        {
+                            return date("d/m/Y", strtotime($data));
+                        }
+
                         include("CONEXAO.php");
 
                         $cpf = $_SESSION['cpf'];
@@ -167,7 +173,7 @@
                                 echo "</div>";
                                 echo "<div class=\"conteudo\">";
                                 echo "<input type='hidden' value='" . $row['ID'] . "' name='vacinaid' />"; //added                           
-                                echo "<p><span class=\"bold\"> Data: </span>" .  $row['dia'] . "</p>";
+                                echo "<p><span class=\"bold\"> Data: </span>" .  data($row['dia']) . "</p>";
                                 echo "<p><span class=\"bold\"> Código: </span>" .  $row['codigo'] . "</p>";
                                 echo "<p><span class=\"bold\"> Dose: </span>" . $row['dose'] . " dose(s)</p>";
                                 echo "<p><span class=\"bold\"> Lugar: </span>" .  $row['lugar'] . "</p>";
@@ -187,14 +193,16 @@
                             $codigo = $_POST['codigo'];
                             $cpf = $_SESSION['cpf'];
 
-                            $sql = "insert into vacina (nome, lugar, dia, codigo, dose, cpf) values ('$vacina','$local','$data' ,'$codigo', '$dose', '$cpf');";
+                            if ($vacina != null && $data != null && $local != null && $dose != null && $codigo != null) {
+                                $sql = "insert into vacina (nome, lugar, dia, codigo, dose, cpf) values ('$vacina','$local','$data' ,'$codigo', '$dose', '$cpf');";
 
-                            if (mysqli_query($conn, $sql)) {
-                                echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=VACINAS.php'>";
-                            } else {
-                                echo " <h3> Erro: </h3>" . $sql . "<br>" . mysqli_error($conn);
+                                if (mysqli_query($conn, $sql)) {
+                                    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=VACINAS.php'>";
+                                } else {
+                                    echo "<div class=\"alert alert-danger\" role=\"alert\"> Erro </div>";
+                                }
+                                mysqli_close($conn);
                             }
-                            mysqli_close($conn);
                         }
 
                         if (isset($_POST['delete'])) {
@@ -204,7 +212,7 @@
                             if (mysqli_query($conn, $sql)) {
                                 echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=VACINAS.php'>";
                             } else {
-                                echo " <h3> Erro: </h3>" . $sql . "<br>" . mysqli_error($conn);
+                                echo "<div class=\"alert alert-danger\" role=\"alert\"> Erro </div>";
                             }
                             mysqli_close($conn);
                         }

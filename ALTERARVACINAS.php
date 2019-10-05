@@ -164,14 +164,16 @@
                         $dose = $_POST['dose'];
                         $codigo = $_POST['codigo'];
 
-                        $sql = "UPDATE vacina set nome = '{$vacina}', lugar = '{$local}', dia = '{$data}',
-                    codigo = '{$codigo}' where ID = " .  $_GET['id'] . " AND cpf = '{$cpf}';";
+                        if ($vacina != null && $data != null && $local != null && $dose != null && $codigo != null) {
+                            $sql = "UPDATE vacina set nome = '{$vacina}', lugar = '{$local}', dia = '{$data}',
+                            codigo = '{$codigo}' where ID = " .  $_GET['id'] . " AND cpf = '{$cpf}';";
 
-                        $result = mysqli_query($conn, $sql);
-                        if ($result) {
-                            echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=CONSULTA.php'>";
-                        } else {
-                            echo "<div class='alert alert-danger'>Error: There was an error while updating user info</div>";
+                            $result = mysqli_query($conn, $sql);
+                            if ($result) {
+                                echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=CONSULTA.php'>";
+                            } else {
+                                echo "<div class=\"alert alert-danger\" role=\"alert\"> Erro </div>";
+                            }
                         }
                     }
                     $id = $_GET['id'];

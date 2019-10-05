@@ -8,11 +8,11 @@
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/pattern.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
@@ -24,30 +24,36 @@
     <?php echo $importarhtml["headerINDEX"]; ?>
 
 
-    <div class="container-head banner">
+    <div class="container-head banner" style="background-image: url ('IMG/doenca/tuberculose.jpg')">
         <h1>Tuberculose</h1>
         <p class="text-desc center"> Doença bacteriana infecciosa. Afeta principalmente os pulmões e pode ser grave. </p>
 
     </div>
 
     <div class="container-body">
+        <div class="row">
+            <div class="col-xl">
+                <img class="img-fluid" src="IMG/doenca/tuberculose.jpg"/>             
+            </div>
 
-        <section>
-            <h3>O que é Tuberculose</h3>
-            <p>A tuberculose é uma doença infecciosa e transmissível que afeta prioritariamente os pulmões, embora
-                possa
-                acometer outros órgãos e/ou sistemas. A doença é causada pelo Mycobacterium tuberculosis ou bacilo
-                de
-                Koch. </p>
+            <div class="col-xl">
+                <section>
+                    <h3>O que é Tuberculose</h3>
+                    <p>A tuberculose é uma doença infecciosa e transmissível que afeta prioritariamente os pulmões, embora
+                        possa
+                        acometer outros órgãos e/ou sistemas. A doença é causada pelo Mycobacterium tuberculosis ou bacilo
+                        de
+                        Koch. </p>
 
-            <p> No Brasil, a doença é um sério problema da saúde pública, com profundas raízes sociais. A epidemia
-                do
-                HIV e a presença de bacilos resistentes tornam o cenário ainda mais complexo. A cada ano, são
-                notificados aproximadamente 70 mil casos novos e ocorrem cerca de 4,5 mil mortes em decorrência da
-                tuberculose.
-            </p>
-
-        </section>
+                    <p> No Brasil, a doença é um sério problema da saúde pública, com profundas raízes sociais. A epidemia
+                        do
+                        HIV e a presença de bacilos resistentes tornam o cenário ainda mais complexo. A cada ano, são
+                        notificados aproximadamente 70 mil casos novos e ocorrem cerca de 4,5 mil mortes em decorrência da
+                        tuberculose.
+                    </p>
+                </section>
+            </div>
+        </div>    
 
         <section>
             <h3>Sintomas</h3>

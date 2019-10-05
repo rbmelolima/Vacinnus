@@ -10,12 +10,11 @@
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
     <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/sb-admin-2.css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
-    <link rel="stylesheet" href="CSS/sb-admin-2.css" type="text/css">
-    <link rel="stylesheet" href="CSS/fontawesome-free/css/all.css" type="text/css">
-    <link rel="stylesheet" href="CSS/fontawesome-free/css/fontawesome.css" type="text/css">
-    <link rel="stylesheet" href="CSS/ionicons/css/ionicons.css" type="text/css">
-
     <title>Vacinnus</title>
 
     <?php

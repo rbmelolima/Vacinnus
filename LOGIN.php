@@ -8,11 +8,11 @@
     <title>Vacinnus</title>
     <meta name="description" content="Carteira de vacinação online">
     <meta name="keywords" content="Carteira de vacinação">
-    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="assets/css/helpers.css">   
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
@@ -28,10 +28,10 @@
                     <form action="" method="post" class="bg-white rounded pb_form_v1">
                         <h2 class="mb-4 mt-0 text-center">Login</h2>
                         <div class="form-group">
-                            <input type="text" class="form-control pb_height-50 reverse" placeholder="CPF" name="cpf">
+                            <input type="text" class="form-control pb_height-50 reverse" placeholder="CPF" name="cpf" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control pb_height-50 reverse" placeholder="Senha" name="senha">
+                            <input type="password" class="form-control pb_height-50 reverse" placeholder="Senha" name="senha" required>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Entrar" name="login">
@@ -47,12 +47,10 @@
         include("CONEXAO.php");
         $cpf = $_POST['cpf'];
         $senha = MD5($_POST['senha']);
-        $verificar = $cpf / 2;
         if (empty($cpf) || empty($senha)) {
-            echo "<div class=\"alert alert-danger\" role=\"alert\">";
-            echo "Erro";
-            echo "</div>";
+            echo "<div class=\"alert alert-danger\" role=\"alert\"> Os campos não podem estar vazios </div>";
         } else {
+            $verificar = $cpf / 2;
             if (is_numeric($verificar)) {
                 $sql = "select * from pessoa WHERE cpf = '$cpf' and senha = '$senha';";
                 $result = mysqli_query($conn, $sql);

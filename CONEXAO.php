@@ -4,12 +4,12 @@ if (!isset($_SESSION)) {
 }
 
 $servidor = "localhost";
-$bancodedados = "vaccinus";
+$bancodedados = "vacinnus";
 $user = "root";
 $palavrapasse = "";
 
 $conn = mysqli_connect($servidor, $user, $palavrapasse, $bancodedados);
 
 if (!$conn) {
-    die("<h1> Erro de conexão </h1>");
+    die("<div class=\"alert alert-danger\" role=\"alert\"> Erro de conexão </div>");
 }
