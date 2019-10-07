@@ -21,95 +21,96 @@
 <body>
     <?php echo $importarhtml["headerINDEX"]; ?>
 
-    <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light" id="anchor_login">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-6">
-                    <h2 class="heading mb-3">Vacinnus</h2>
-                    <div class="sub-heading">
-                        <p class="mb-4">Acesse suas vacinas em qualquer lugar, a qualquer momento!</p>
+    <div>
+        <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light" id="anchor_login">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <h2 class="heading mb-3">Vacinnus</h2>
+                        <div class="sub-heading">
+                            <p class="mb-4">Acesse suas vacinas em qualquer lugar, a qualquer momento!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1"> </div>
+                    <div class="col-md-5 relative align-self-center">
+                        <form action="" method="post" class="bg-white rounded pb_form_v1">
+                            <h2 class="mb-4 mt-0 text-center">Cadastre-se</h2>
+                            <div class="form-group">
+                                <input type="text" class="form-control py-3 reverse" id="nome" name="nome" required placeholder="Nome completo">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control py-3 reverse" id="datanasc" name="datanasc" required min="1920-01-01">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="celular" class="form-control py-3 reverse" name="celular" pattern="[0-9]{11}" required placeholder="Celular">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control py-3 reverse" id="cep" name="cep" required placeholder="CEP">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control py-3 reverse" id="cpf" name="cpf" required placeholder="CPF">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control py-3 reverse" id="email" name="email" placeholder="SeuEmail@webmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control py-3 reverse" id="senha" name="senha" required minlength="5" placeholder="Senha">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control py-3 reverse" id="senha1" name="senha1" required minlength="5" placeholder="Confirme sua senha">
+                            </div>
+                            <button type="submit" class="btn btn-primary" name="cadastrar">Cadastrar</button>
+                            <button type="reset" class="btn bg-light">Limpar</button>
+                            <br> <br>
+                            <p>Tem uma conta?<a href="LOGIN.php"> Faça o login!</a></p>
+
+
+
+                            <?php
+                            if (isset($_POST['cadastrar'])) {
+                                //Conectar com o banco de dados
+                                $servidor = "localhost";
+                                $bancodedados = "vacinnus";
+                                $user = "root";
+                                $palavrapasse = "";
+                                $conn = mysqli_connect($servidor, $user, $palavrapasse, $bancodedados);
+
+                                //Variáveis do usuário
+                                $nome = $_POST['nome'];
+                                $datanasc = $_POST['datanasc'];
+                                $celular = $_POST['celular'];
+                                $cep = str_replace(array('-', '.'), '', $_POST['cep']);
+                                $cpf = str_replace(array('-', '.'), '', $_POST['cpf']);
+                                $email = $_POST['email'];
+                                $senha = MD5($_POST['senha']);
+                                $senha1 = MD5($_POST['senha1']);
+
+
+                                $permissao = true;
+                                if (empty($nome) || empty($datanasc) || empty($celular) || empty($cep) || empty($cpf) || empty($email) || empty($senha1) || empty($senha)) {
+                                    $permissao = false;
+                                    echo "<div class=\"alert alert-warning\" role=\"alert\"> Os campos devem ser preenchidos </div>";
+                                } else if ($senha != $senha1) {
+                                    $permissao = false;
+                                    echo "<div class=\"alert alert-warning\" role=\"alert\"> As senhas devem ser iguais </div>";
+                                }
+                                if ($permissao) {
+                                    $sql = "insert into pessoa (nome, datanasc, celular, cep, cpf, email, senha) values ('$nome','$datanasc','$celular', '$cep', '$cpf', '$email', '$senha');";
+                                    if (mysqli_query($conn, $sql)) {
+                                        echo "<div class=\"alert alert-success\" role=\"alert\"> Cadastrado com sucesso! </div>";
+                                    } else {
+                                        echo "<div class=\"alert alert-danger\" role=\"alert\"> Não foi possível cadastrá-lo </div>";
+                                    }
+                                }
+                                mysqli_close($conn);
+                            }
+                            ?>
+                        </form>
                     </div>
                 </div>
-                <div class="col-md-1"> </div>
-                <div class="col-md-5 relative align-self-center">
-                    <form action="" method="post" class="bg-white rounded pb_form_v1">
-                        <h2 class="mb-4 mt-0 text-center">Cadastre-se</h2>
-                        <div class="form-group">
-                            <input type="text" class="form-control py-3 reverse" id="nome" name="nome" required placeholder="Nome completo">
-                        </div>
-                        <div class="form-group">
-                            <input type="date" class="form-control py-3 reverse" id="datanasc" name="datanasc" required min="1920-01-01">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="celular" class="form-control py-3 reverse" name="celular" pattern="[0-9]{11}" required placeholder="Celular">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control py-3 reverse" id="cep" name="cep" required placeholder="CEP">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control py-3 reverse" id="cpf" name="cpf" required placeholder="CPF">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control py-3 reverse" id="email" name="email" placeholder="SeuEmail@webmail.com" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control py-3 reverse" id="senha" name="senha" required minlength="5" placeholder="Senha">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control py-3 reverse" id="senha1" name="senha1" required minlength="5" placeholder="Confirme sua senha">
-                        </div>
-                        <button type="submit" class="btn btn-primary" name="cadastrar">Cadastrar</button>
-                        <button type="reset" class="btn bg-light">Limpar</button>
-                        <br> <br>
-                        <p>Tem uma conta?<a href="LOGIN.php"> Faça o login!</a></p>
-
-
-
-                        <?php
-                        if (isset($_POST['cadastrar'])) {
-                            //Conectar com o banco de dados
-                            $servidor = "localhost";
-                            $bancodedados = "vacinnus";
-                            $user = "root";
-                            $palavrapasse = "";
-                            $conn = mysqli_connect($servidor, $user, $palavrapasse, $bancodedados);
-
-                            //Variáveis do usuário
-                            $nome = $_POST['nome'];
-                            $datanasc = $_POST['datanasc'];
-                            $celular = $_POST['celular'];
-                            $cep = str_replace(array('-', '.'), '', $_POST['cep']);
-                            $cpf = str_replace(array('-', '.'), '', $_POST['cpf']);
-                            $email = $_POST['email'];
-                            $senha = MD5($_POST['senha']);
-                            $senha1 = MD5($_POST['senha1']);
-
-
-                            $permissao = true;
-                            if (empty($nome) || empty($datanasc) || empty($celular) || empty($cep) || empty($cpf) || empty($email) || empty($senha1) || empty($senha)) {
-                                $permissao = false;
-                                echo "<div class=\"alert alert-warning\" role=\"alert\"> Os campos devem ser preenchidos </div>";
-                            } else if ($senha != $senha1) {
-                                $permissao = false;
-                                echo "<div class=\"alert alert-warning\" role=\"alert\"> As senhas devem ser iguais </div>";
-                            }
-                            if ($permissao) {
-                                $sql = "insert into pessoa (nome, datanasc, celular, cep, cpf, email, senha) values ('$nome','$datanasc','$celular', '$cep', '$cpf', '$email', '$senha');";
-                                if (mysqli_query($conn, $sql)) {
-                                    echo "<div class=\"alert alert-success\" role=\"alert\"> Cadastrado com sucesso! </div>";
-                                } else {
-                                    echo "<div class=\"alert alert-danger\" role=\"alert\"> Não foi possível cadastrá-lo </div>";
-                                }
-                            }
-                            mysqli_close($conn);
-                        }
-                        ?>
-                    </form>
-                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
 
 
     <section class="pb_section bg-light pb_slant-white">
@@ -264,62 +265,63 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="text-center mb-5">
-                    <h3>Baixe aqui os calendários de vacinação</h3>
+                    <h1>Calendário de Vacinação</h1>
+                    <p class="legend"> Conteúdo gratuito oferecido pela SBIm</p>
                     <br>
                 </div>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-3 text-center"> 
+                <div class="col-3 text-center calendario_vac">
                     <a href="DOC/calend-sbim-prematuro.pdf">
                         <img class="img-fluid" src="IMG/icon/pdf.png">
                         <p>Prematuro</p>
                     </a>
                 </div>
 
-                <div class="col-3 text-center"> 
+                <div class="col-3 text-center calendario_vac">
                     <a href="DOC/calend-sbim-crianca.pdf">
                         <img class="img-fluid" src="IMG/icon/pdf.png">
                         <p>Criança</p>
                     </a>
                 </div>
 
-                <div class="col-3 text-center"> 
+                <div class="col-3 text-center calendario_vac">
                     <a href="DOC/calend-sbim-adolescente.pdf">
                         <img class="img-fluid" src="IMG/icon/pdf.png">
                         <p>Adolescente</p>
                     </a>
                 </div>
 
-                <div class="col-3 text-center"> 
+                <div class="col-3 text-center calendario_vac">
                     <a href="DOC/calend-sbim-adulto.pdf">
                         <img class="img-fluid" src="IMG/icon/pdf.png">
                         <p>Adulto</p>
                     </a>
                 </div>
 
-                <div class="col-3 text-center"> 
+                <div class="col-3 text-center calendario_vac">
                     <a href="DOC/calend-sbim-idoso.pdf">
                         <img class="img-fluid" src="IMG/icon/pdf.png">
                         <p>Idoso</p>
                     </a>
                 </div>
 
-                <div class="col-3 text-center"> 
+                <div class="col-3 text-center calendario_vac">
                     <a href="DOC/calend-sbim-gestante.pdf">
                         <img class="img-fluid" src="IMG/icon/pdf.png">
                         <p>Gestante</p>
                     </a>
                 </div>
 
-                <div class="col-3 text-center"> 
+                <div class="col-3 text-center calendario_vac">
                     <a href="DOC/calend-sbim-ocupacional.pdf">
                         <img class="img-fluid" src="IMG/icon/pdf.png">
                         <p> Ocupacional </p>
                     </a>
                 </div>
 
-                <div class="col-3 text-center"> 
+                <div class="col-3 text-center calendario_vac">
                     <a href="DOC/calend-sbim-unico.pdf">
                         <img class="img-fluid" src="IMG/icon/pdf.png">
                         <p>Único</p>

@@ -233,18 +233,19 @@
                                             <option value="Hepatite A">Hepatite A</option>
                                             <option value="Hepatite B">Hepatite B</option>
                                             <option value="HPV">HPV</option>
-                                            <option value="Meningocócica C">Meningocócica C</option>
+                                            <option value="Meningocócica C<">Meningocócica C</option>
                                             <option value="Pentavalente">Pentavalente</option>
                                             <option value="Pneumocócica 10 Valente">Pneumocócica 10 Valente</option>
                                             <option value="Pneumocócica 23 Valente">Pneumocócica 23 Valente</option>
                                             <option value="Rotavírus">Rotavírus</option>
                                             <option value="Tetra viral">Tetra viral</option>
                                             <option value="Tríplice viral">Tríplice viral</option>
-                                            <option value="Vacina Inativada Poliomielite (VIP)">Vacina Inativada
-                                                Poliomielite (VIP)</option>
-                                            <option value="Vacina Oral Poliomielite (VOP)">Vacina Oral Poliomielite
-                                                (VOP)</option>
+                                            <option value="Vacina Inativada Poliomielite (VIP)">Vacina Inativada Poliomielite (VIP)</option>
+                                            <option value="Vacina Oral Poliomielite (VOP)">Vacina Oral Poliomielite (VOP)</option>
                                             <option value="Varicela atenuada">Varicela atenuada</option>
+                                            <option value="Herpes">Herpes</option>
+                                            <option value="Dengue">Dengue</option>
+                                            <option value="Catapora">Catapora</option>
                                         </select>
                                     </div>
                                 </div>

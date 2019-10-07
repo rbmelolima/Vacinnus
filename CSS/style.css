@@ -1425,3 +1425,17 @@ a {
     font-size: 14px;
     color: #adb5bd;
 }
+
+.calendario_vac{
+    margin-bottom: 15px;
+}
+
+.legend{
+    color: #868e96;
+}
+
+@media screen and (max-width: 780px){
+    .calendario_vac{
+        margin: 10px;
+    }
+}

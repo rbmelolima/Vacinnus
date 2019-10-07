@@ -207,6 +207,9 @@
                                         <option value="Vacina Inativada Poliomielite (VIP)">Vacina Inativada Poliomielite (VIP)</option>
                                         <option value="Vacina Oral Poliomielite (VOP)">Vacina Oral Poliomielite (VOP)</option>
                                         <option value="Varicela atenuada">Varicela atenuada</option>
+                                        <option value="Herpes">Herpes</option>
+                                        <option value="Dengue">Dengue</option>
+                                        <option value="Catapora">Catapora</option>
                                     </select>
                                 </div>
                             </div>
