@@ -85,21 +85,31 @@
                                 $senha = MD5($_POST['senha']);
                                 $senha1 = MD5($_POST['senha1']);
 
-
                                 $permissao = true;
+                                //Validação de campos vazios
                                 if (empty($nome) || empty($datanasc) || empty($celular) || empty($cep) || empty($cpf) || empty($email) || empty($senha1) || empty($senha)) {
                                     $permissao = false;
-                                    echo "<div class=\"alert alert-warning\" role=\"alert\"> Os campos devem ser preenchidos </div>";
-                                } else if ($senha != $senha1) {
+                                    echo "<div class=\"alert alert-warning\" role=\"alert\"> Todos os campos devem ser preenchidos </div>";
+                                } 
+                                //Verificação de senhas iguais
+                                else if ($senha != $senha1) {
                                     $permissao = false;
                                     echo "<div class=\"alert alert-warning\" role=\"alert\"> As senhas devem ser iguais </div>";
                                 }
                                 if ($permissao) {
-                                    $sql = "insert into pessoa (nome, datanasc, celular, cep, cpf, email, senha) values ('$nome','$datanasc','$celular', '$cep', '$cpf', '$email', '$senha');";
-                                    if (mysqli_query($conn, $sql)) {
-                                        echo "<div class=\"alert alert-success\" role=\"alert\"> Cadastrado com sucesso! </div>";
+                                    // Verificação de CPF exisente no banco de dados
+                                    $sql = "select * from pessoa WHERE cpf = '$cpf';";
+                                    $result = mysqli_query($conn, $sql);
+                                    $linhasafetadas = mysqli_num_rows($result);
+                                    if ($linhasafetadas > 0) {
+                                        echo "<div class=\"alert alert-danger\" role=\"alert\"> CPF já cadastrado! </div>";
                                     } else {
-                                        echo "<div class=\"alert alert-danger\" role=\"alert\"> Não foi possível cadastrá-lo </div>";
+                                        $sql = "insert into pessoa (nome, datanasc, celular, cep, cpf, email, senha) values ('$nome','$datanasc','$celular', '$cep', '$cpf', '$email', '$senha');";
+                                        if (mysqli_query($conn, $sql)) {
+                                            echo "<div class=\"alert alert-success\" role=\"alert\"> Cadastrado com sucesso! </div>";
+                                        } else {
+                                            echo "<div class=\"alert alert-danger\" role=\"alert\"> Não foi possível cadastrá-lo! </div>";
+                                        }
                                     }
                                 }
                                 mysqli_close($conn);

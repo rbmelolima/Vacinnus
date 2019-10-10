@@ -193,12 +193,12 @@
                         $ok2 = $_POST['confirm2'];
 
                         if ($ok1 != null && $ok2 != null && ($ok1 == $ok2)) {
-                            $sql = "delete from pessoa where cpf = " . $cpf . ";";
                             $sql2 = "delete from vacina where cpf = " . $cpf . ";";
+                            $sql = "delete from pessoa where cpf = " . $cpf . ";";                            
                             if (mysqli_query($conn, $sql2)) {
                                 if (mysqli_query($conn, $sql)) {
-                                    session_destroy();
-                                    header("Location: index.php");
+                                    session_destroy();            
+                                    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=CONFIGURACAO.php'>";                        
                                 }
                             } else {
                                 echo "<div class=\"alert alert-danger\" role=\"alert\"> Erro ao excluir </div>";
