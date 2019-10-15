@@ -11171,7 +11171,7 @@ a:focus {
 }
 
 .sidebar #sidebarToggle::after {  
-  background: url('IMG/icon/back.png');
+  background: url('IMG/icon/back1.png');
   margin-right: 0.1rem;
 }
 
@@ -12010,5 +12010,3 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
-
-

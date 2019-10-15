@@ -37,7 +37,7 @@ return array(
     </li>    
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"> <i class="ion-chevron-left"></i></button>
+        <button class="rounded-circle border-0" id="sidebarToggle"> <img src="IMG/icon/back1.png"/></button>
     </div>
 </ul>    
     ',
