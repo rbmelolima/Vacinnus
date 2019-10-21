@@ -36,28 +36,28 @@
                         <form action="" method="post" class="bg-white rounded pb_form_v1">
                             <h2 class="mb-4 mt-0 text-center">Cadastre-se</h2>
                             <div class="form-group">
-                                <input type="text" class="form-control py-3 reverse" id="nome" name="nome" required placeholder="Nome completo">
+                                <input type="text" class="form-control" id="nome" name="nome" required placeholder="Nome completo">
                             </div>
                             <div class="form-group">
-                                <input type="date" class="form-control py-3 reverse" id="datanasc" name="datanasc" required min="1920-01-01">
+                                <input type="date" class="form-control " id="datanasc" name="datanasc" required min="1920-01-01">
                             </div>
                             <div class="form-group">
-                                <input type="tel" id="celular" class="form-control py-3 reverse" name="celular" pattern="[0-9]{11}" required placeholder="Celular">
+                                <input type="tel" id="celular" class="form-control" name="celular" pattern="[0-9]{11}" required placeholder="Celular">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control py-3 reverse" id="cep" name="cep" required placeholder="CEP">
+                                <input type="text" class="form-control" id="cep" name="cep" required placeholder="CEP (Sem pontuação)" minlength="8" maxlength="8">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control py-3 reverse" id="cpf" name="cpf" required placeholder="CPF">
+                                <input type="text" class="form-control" id="cpf" name="cpf" required placeholder="CPF (Sem pontuação)" minlength="11" maxlength="11" >
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control py-3 reverse" id="email" name="email" placeholder="SeuEmail@webmail.com" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="SeuEmail@webmail.com" required>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control py-3 reverse" id="senha" name="senha" required minlength="5" placeholder="Senha">
+                                <input type="password" class="form-control" id="senha" name="senha" required minlength="5" placeholder="Senha">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control py-3 reverse" id="senha1" name="senha1" required minlength="5" placeholder="Confirme sua senha">
+                                <input type="password" class="form-control" id="senha1" name="senha1" required minlength="5" placeholder="Confirme sua senha">
                             </div>
                             <button type="submit" class="btn btn-primary" name="cadastrar">Cadastrar</button>
                             <button type="reset" class="btn bg-light">Limpar</button>
@@ -137,7 +137,7 @@
                             <!-- Colocar um icone aqui -->
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0 mb-3 heading">Accesibilidade</h5>
+                            <h5 class="mt-0 mb-3 heading">Disponibilidade</h5>
                             <p class="text-sans-serif">Acesse suas vacinas de onde você estiver, quando você quiser.</p>
                         </div>
                     </div>

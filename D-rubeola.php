@@ -31,7 +31,10 @@
 
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/rubeola.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/rubeola.jpg" />
+                    <figcaption>Fonte: https://drauziovarella.uol.com.br/doencas-e-sintomas/rubeola/</figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -47,7 +50,6 @@
                         da Rubéola Congênita (SRC) que atinge o feto ou o recém-nascido cujas mães se infectaram durante a
                         gestação.
                     </p>
-
                 </section>
             </div>
         </div>
@@ -69,9 +71,8 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> Para o diagnóstico da rubéola são feitos exames laboratoriais, disponíveis na rede pública em todos os
                 estados,
                 para confirmação ou descarte de casos, como titulação de anticorpos IgM e IgG para rubéola.
@@ -86,21 +87,16 @@
                 diferencial
                 é muito importante para classificar adequadamente qualquer caso suspeito.
             </p>
-
-            </p>
         </section>
-
 
         <section>
             <h3>Transmissão</h3>
-
             <p> A transmissão da rubéola acontece diretamente de pessoa a pessoa, por meio das secreções nasofaríngeas
                 expelida pelo doente ao tossir, respirar, falar ou respirar.
                 O período de transmissibilidade é de 5 a 7 dias antes e depois do início do exantema, que é uma erupção
                 cutânea. A maior transmissibilidade ocorre dois dias antes e depois do início do exantema.
             </p>
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -113,6 +109,10 @@
                 tomar a vacina tríplice viral ou a vacina dupla viral (contra sarampo e rubéola), especialmente mulheres
                 que não tiveram contato com a doença. Gestantes não podem ser vacinadas. As mulheres em idade fértil
                 devem evitar a gestação por 30 dias após a vacinação.</p>
+        </section>
+
+        <section class="fonte">
+            <p> Fonte: http://saude.gov.br/saude-de-a-z/rubeola</p>
         </section>
 
     </div>

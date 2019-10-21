@@ -1,7 +1,7 @@
 <?php
 return array(
-    //Sidebar da área administrativa
-    'sidebarADMIN' => '
+  //Sidebar da área administrativa
+  'sidebarADMIN' => '
     <ul class="pb_navbar navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
@@ -42,8 +42,8 @@ return array(
 </ul>    
     ',
 
-    //rodapé da área administrativa
-    'footerADMIN' => '
+  //rodapé da área administrativa
+  'footerADMIN' => '
     <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
@@ -53,8 +53,8 @@ return array(
     </footer>     
     ',
 
-    //header da página inicial e afins
-    'headerINDEX' => '    
+  //header da página inicial e afins
+  'headerINDEX' => '    
     <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
     <div class="container">
     <a class="navbar-brand" href="index.php">Vacinnus</a>
@@ -88,8 +88,8 @@ return array(
     </nav>
     ',
 
-    //footer da página inicial e afins
-    'footerINDEX' => '   
+  //footer da página inicial e afins
+  'footerINDEX' => '   
     <footer class="pb_footer bg-light" role="contentinfo">
       <div class="container">
         <div class="row text-center">

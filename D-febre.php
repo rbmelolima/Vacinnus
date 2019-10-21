@@ -18,9 +18,7 @@
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
 
-
 <body>
-
     <?php echo $importarhtml["headerINDEX"]; ?>
 
     <div class="container-head banner">
@@ -31,7 +29,10 @@
     <div class="container-body">
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/febreamarela.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/febreamarela.jpg" />
+                    <figcaption>Fonte: https://www.abrale.org.br/revista-online/febre-amarela-veja-se-voce-pode-tomar-a-vacina/ </figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -61,7 +62,7 @@
                 </section>
             </div>
         </div>
-        
+
         <section>
             <h3>Sintomas</h3>
             <ul>
@@ -86,9 +87,8 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> Somente um médico é capaz de diagnosticar e tratar corretamente a febre amarela.
                 No caso de qualquer um dos sintomas da doença, procure imediatamente uma unidade de saúde para avaliação
                 médica adequada.
@@ -96,10 +96,8 @@
                 escolher a melhor forma de tratamento.</p>
         </section>
 
-
         <section>
             <h3>Transmissão</h3>
-
             <p> O vírus da febre amarela é transmitido pela picada dos mosquitos transmissores infectados. A doença não
                 é passada de pessoa a pessoa. A série
                 histórica da doença no Brasil tem demonstrado maior frequência de ocorrência de casos humanos nos meses
@@ -107,21 +105,17 @@
                 sazonal. Esse fato ocorre principalmente no verão, quando a temperatura média aumenta na estação das
                 chuvas, favorecendo a reprodução e proliferação
                 de mosquitos (vetores) e, por consequência o potencial de circulação do vírus.
-
             </p>
-
             <p>
                 Os vetores silvestres têm hábito diurno, realizando o repasto sanguíneo durante as horas mais quentes do
                 dia, sendo os vetores dos gêneros Haemagogus
                 e Sabethes, geralmente, mais ativos entre às 9h e 16h da tarde. Há dois diferentes ciclos
                 epidemiológicos de transmissão:
-
                 <ul>
                     <li>Silvestre;</li>
                     <li>Urbano.</li>
                 </ul>
             </p>
-
             <p>
                 Apesar desses ciclos diferentes, a febre amarela tem as mesmas características sob o ponto de vista
                 etiológico, clínico, imunológico e fisiopatológico.
@@ -132,10 +126,8 @@
                 hospedeiro acidental ao adentrar áreas de mata. No ciclo urbano, o homem é o único hospedeiro com
                 importância epidemiológica e a transmissão ocorre a partir de vetores urbanos (Aedes aegypti)
                 infectados.
-
             </p>
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -152,6 +144,9 @@
             </p>
         </section>
 
+        <section class="fonte">
+            <p> Fonte: http://saude.gov.br/saude-de-a-z/febre-amarela-sintomas-transmissao-e-prevencao</p>
+        </section>
     </div>
 
 

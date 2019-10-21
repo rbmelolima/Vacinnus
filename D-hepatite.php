@@ -18,11 +18,8 @@
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
 
-
 <body>
-
     <?php echo $importarhtml["headerINDEX"]; ?>
-
 
     <div class="container-head banner">
         <h1>Hepatite</h1>
@@ -33,7 +30,11 @@
 
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/hepatite.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/hepatite.jpg" />
+                    <figcaption>Fonte: http://www.onortao.com.br/tudo-sobre-hepatite-b-o-que-e-sintomas-e-tratamento/
+                    </figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -42,7 +43,6 @@
                     <p> A hepatite é a inflamação do fígado. Pode ser causada por vírus ou pelo uso de alguns remédios, álcool e
                         outras drogas, assim como por doenças autoimunes, metabólicas e genéticas. Em alguns casos, são doenças
                         silenciosas que nem sempre apresentam sintomas.
-
                     </p>
 
                     <p> NAs hepatites virais são inflamações causadas por vírus que são classificados por letras do alfabeto em
@@ -81,9 +81,8 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p>
                 O diagnóstico de hepatite é feito através da anamnese para identificar os sintomas apresentados e buscar
                 fatores de
@@ -110,12 +109,9 @@
             </p>
         </section>
 
-
         <section>
             <h3>Transmissão</h3>
-
             <ul>
-
                 <li>Contágio fecal-oral: condições precárias de saneamento básico e água, de higiene pessoal e dos
                     alimentos (hepatite A e E);</li>
 
@@ -142,10 +138,7 @@
                     de atualmente haver um maior controle, com a melhoria das tecnologias de triagem de doadores e
                     sistemas de controle de qualidade mais eficientes.</li>
             </ul>
-
-
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -156,6 +149,9 @@
             </p>
         </section>
 
+        <section class="fonte">
+            <p> Fonte: http://www.saude.gov.br/saude-de-a-z/hepatite</p>
+        </section>
     </div>
 
     <?php echo $importarhtml["footerINDEX"]; ?>

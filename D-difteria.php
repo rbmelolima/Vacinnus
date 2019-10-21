@@ -30,7 +30,10 @@
     <div class="container-body">
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/difteria.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/difteria.jpg" />
+                    <figcaption>Fonte: https://www.tuasaude.com/difteria/</figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -43,7 +46,6 @@
                         vizinhas, é a manifestação clínica típica da difteria. Em casos mais severos, que são raros, pode
                         ocorrer um inchaço grave no pescoço, com aumento dos gânglios linfáticos, gerando dificuldade
                         de respirar ou até mesmo bloqueio total da respiração.
-
                     </p>
 
                     <p> A difteria ocorre durante todos os períodos do ano e pode afetar todas as pessoas não imunizadas, de
@@ -55,7 +57,6 @@
                         é maior e onde se registram baixas coberturas vacinais. Os casos são raros quando as coberturas vacinais
                         atingem patamares de 80%.
                     </p>
-
                 </section>
             </div>
         </div>
@@ -85,9 +86,8 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> O diagnóstico da difteria é clínico, após análise detalhada dos sintomas e características típicas da
                 doença por um profissional de saúde.
                 Para confirmação do diagnóstico, o médico deverá solicitar coleta de secreção de nasofrainge para
@@ -95,29 +95,22 @@
                 ser coletadas amostras das lesões da pele.</p>
         </section>
 
-
         <section>
             <h3>Transmissão</h3>
-
             <p> A transmissão da difteria ocorre basicamente por meio da tosse, espirro ou por lesões na pele, ou seja,
                 a bactéria da difteria é transmitida pelo contato direto
                 da pessoa doente ou portadores com pessoa suscetível, por meio de gotículas de secreção respiratória,
                 eliminadas por tosse, espirro ou ao falar.
                 Em casos raros, pode ocorrer a contaminação por objetos capazes de absorver e transportar
                 micro-organismos, como a bactéria causadora da difteria.
-
             </p>
-
             <p>
                 O período de incubação da difteria, ou seja, o tempo que os sintomas começam a aparecer desde a infecção
                 da pessoa, é, em geral, de 1 a 6 dias, podendo ser mais
                 longo. Já o período de transmissibilidade da doença dura, em média, até 2 semanas após o início dos
                 sintomas.
             </p>
-
-
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -126,6 +119,9 @@
             </p>
         </section>
 
+        <section class="fonte">
+            <p> Fonte: https://observatoriomaturidade.com.br/2019/01/29/difteria-o-que-e-causas-sintomas-tratamento-e-prevencao/</p>
+        </section>
     </div>
 
     <?php echo $importarhtml["footerINDEX"]; ?>

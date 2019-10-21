@@ -18,11 +18,8 @@
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
 
-
 <body>
-
     <?php echo $importarhtml["headerINDEX"]; ?>
-
 
     <div class="container-head banner">
         <h1>Poliomielite</h1>
@@ -32,7 +29,10 @@
     <div class="container-body">
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/poliomielite.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/poliomielite.jpg" />
+                    <figcaption>Fonte: https://www.conhecimentogeral.inf.br/celulas_nervosas/ </figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -53,7 +53,7 @@
                 </section>
             </div>
         </div>
-        
+
         <section>
             <h3>Sintomas</h3>
             <ul>
@@ -92,9 +92,8 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> O diagnóstico da poliomielite deve ser suspeitado sempre que houver paralisia flácida de surgimento
                 agudo
                 com diminuição ou abolição de reflexos tendinosos em menores de 15 anos. Os exames de liquor (cultura) e
@@ -103,10 +102,8 @@
                 dado pela detecção de poliovírus nas fezes</p>
         </section>
 
-
         <section>
             <h3>Transmissão</h3>
-
             <p> A Uma pessoa pode transmitir diretamente para a outra. A transmissão do vírus da poliomielite se dá
                 através
                 da boca, com material contaminado com fezes (contato fecal-oral), o que é crítico quando as condições
@@ -115,7 +112,6 @@
                 higiene,
                 correm maior risco de contrair a doença.
             </p>
-
             <p>
                 O Poliovírus também pode ser disseminado por contaminação da água e de alimentos por fezes. A doença
                 também pode
@@ -128,10 +124,8 @@
                 infectado elimina o vírus nas fezes, que pode ser adquirido por outras pessoas por via oral. A
                 transmissão ocorre com mais
                 frequência a partir de indivíduos sem sintomas.
-
             </p>
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -150,6 +144,10 @@
                 seis anos de idade. Também é necessário
                 vacinar-se em todas as campanhas.
             </p>
+        </section>
+
+        <section class="fonte">
+            <p> Fonte: http://saude.gov.br/saude-de-a-z/poliomielite</p>
         </section>
 
     </div>

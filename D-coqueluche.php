@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
     <?php echo $importarhtml["headerINDEX"]; ?>
 
     <div class="container-head banner">
@@ -30,7 +29,10 @@
     <div class="container-body">
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/coqueluche.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/coqueluche.jpg" />
+                    <figcaption> Fonte: https://www.ativosaude.com/saude/coqueluche/ </figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -39,18 +41,16 @@
                     <p> A coqueluche é uma doença infecciosa aguda, transmissível e de distribuição universal. É provocada pelo
                         bacilo Bordetella pertussis e compromete especificamente o aparelho respiratório da pessoa,
                         o que inclui traqueia e brônquios. A principal característica é a tosse seca.
-
                     </p>
 
                     <p> O ser humano é o único reservatório natural do bacilo causador da coqueluche. Apesar de ainda não ter
                         sido constatada a existência de portadores crônicos da doença, podem ocorrer casos sem sintomas
                         e/ou com pouca importância na disseminação da infecção.
                     </p>
-
                 </section>
             </div>
         </div>
-        
+
         <section>
             <h3>Sintomas</h3>
             <ul>
@@ -75,9 +75,8 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> O diagnóstico da coqueluche em estágios iniciais é difícil, uma vez que os sintomas podem parecer como
                 resfriado ou até mesmo outras doenças respiratórias. A tosse seca é um forte indicativo da coqueluche,
                 mas
@@ -93,10 +92,8 @@
             </p>
         </section>
 
-
         <section>
             <h3>Transmissão</h3>
-
             <p> A transmissão da coqueluche ocorre, principalmente, pelo contato direto do doente com uma pessoa
                 suscetível,
                 por meio de gotículas de secreção eliminadas por tosse, espirro ou até mesmo ao falar.Em alguns casos, a
@@ -104,19 +101,14 @@
                 pouco
                 frequente, porque é difícil o agente causador da doença sobreviver fora do corpo humano, mas não é
                 impossível.
-
             </p>
-
             <p>
                 O período de incubação do bacilo, ou seja, o tempo que os sintomas começam a aparecer desde o momento da
                 infecção,
                 é de, em média, 5 a 10 dias podendo variar de 4 a 21 dias e, raramente, até 42 dias. A maior
                 transmissibilidade da doença ocorre na fase catarral.
             </p>
-
-
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -131,6 +123,10 @@
                 imunidade não é permanente, após 5 a 10
                 anos, em média, da última dose da vacina, a proteção pode ser pouca ou inexistente.
             </p>
+        </section>
+
+        <section class="fonte">
+            <p> Fonte: https://jopioneiro.com.br/casos-de-coqueluche-sao-registrados-em-canarana/</p>
         </section>
 
     </div>

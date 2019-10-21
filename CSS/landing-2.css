@@ -18,7 +18,9 @@ body {
 
 .pb_slant-light,
 .pb_slant-white {
-  position: relative; }
+  position: relative;
+  padding-top: 5%;
+}
   .pb_slant-light:after,
   .pb_slant-white:after {
     content: "";
@@ -55,3 +57,4 @@ body {
 
 .pb_cover_v3 .btn, .pb_xl_py_cover .btn {
   color: white; }
+

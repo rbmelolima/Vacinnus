@@ -82,5 +82,13 @@ label{
     .container-body{    
         padding: 5%;        
     }    
+
+    .banner{
+        padding: 23% 10% 10% 10%;
+    }
+
+    section h3{
+        text-align: left;
+    }
 }
 

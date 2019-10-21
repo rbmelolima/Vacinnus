@@ -22,7 +22,6 @@
 
     <?php echo $importarhtml["headerINDEX"]; ?>
 
-
     <div class="container-head banner">
         <h1>Meningite</h1>
         <p class="text-desc center"> Inflamação das membranas que revestem o cérebro e a medula espinhal, geralmente causada por uma infecção. </p>
@@ -31,7 +30,10 @@
     <div class="container-body">
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/meningite.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/meningite.jpg" />
+                    <figcaption>Fonte: http://www.testonoticias.com.br/sa%C3%BAde/a-meningite-pode-matar-1.2157512</figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -43,7 +45,6 @@
                         por exemplo, medicamentos e neoplasias. Entre os agentes infecciosos, as meningites bacterianas e virais
                         são as mais importantes do ponto de vista da saúde pública e clinico, devido a sua magnitude, capacidade
                         de causar surtos e, no caso da meningite bacteriana, a gravidade.
-
                     </p>
 
                     <p> No Brasil, a meningite é considerada uma doença endêmica, deste modo, casos da doença são esperados ao
@@ -51,11 +52,9 @@
                         bacterianas
                         é mais comum no outono-inverno, e das virais na primavera-verão.
                     </p>
-
                 </section>
             </div>
         </div>
-
 
         <section>
             <h3>Sintomas</h3>
@@ -82,9 +81,8 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> Se o médico suspeita de meningite, ele solicita a coleta de amostras de sangue e líquido cerebroespinhal
                 (líquor).
                 O laboratório então testa as amostras para detectar o agente que está causando a infecção. A
@@ -100,7 +98,6 @@
             </p>
         </section>
 
-
         <section>
             <h3>Transmissão</h3>
 
@@ -110,10 +107,7 @@
                 fecal-oral é de grande
                 importância, especialmente nas infecções por enterovírus.
             </p>
-
-
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -135,6 +129,10 @@
                     <li><b>BCG:</b> protege contra as formas graves da tuberculose.</li>
                 </ul>
             </p>
+        </section>
+
+        <section class="fonte">
+            <p> Fonte: http://saude.gov.br/saude-de-a-z/meningites </p>
         </section>
 
     </div>

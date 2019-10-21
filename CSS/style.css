@@ -577,6 +577,8 @@ a {
 
 .pb_form_v1 {
     padding: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     -webkit-box-shadow: 1px 11px 68px -20px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 11px 68px -20px rgba(0, 0, 0, 0.75);
     box-shadow: 1px 11px 68px -20px rgba(0, 0, 0, 0.75);
@@ -592,6 +594,14 @@ a {
         padding: 30px;
     }
 }
+
+@media (max-width: 450px) {
+    .pb_form_v1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+}
+
 
 .pb_select-wrap {
     position: relative;
@@ -897,9 +907,12 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 100; 
     width: 100%;    
+    padding-bottom: 15px;    
 }
+
+
 
 .pb_navbar .navbar-toggler:active,
 .pb_navbar .navbar-toggler:focus {
@@ -1430,7 +1443,7 @@ a {
     margin-bottom: 15px;
 }
 
-.legend{
+.legend, .fonte{
     color: #868e96;
 }
 
@@ -1439,3 +1452,15 @@ a {
         margin: 10px;
     }
 }
+
+.calendario_vac a p{
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.calendario_vac a:hover{
+    text-decoration: none;
+}
+

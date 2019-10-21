@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
 
-
 <body>
     <?php echo $importarhtml["headerINDEX"]; ?>
 
@@ -30,7 +29,10 @@
     <div class="container-body">
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/gripe.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/gripe.jpg" />
+                    <figcaption>Fonte: https://www.gentside.com.br/gripe/gripe-como-cura-la-de-forma-eficaz_art11395.html</figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -48,7 +50,6 @@
                         imunodeficiência são
                         mais vulneráveis aos vírus.
                     </p>
-
                 </section>
             </div>
         </div>
@@ -73,13 +74,11 @@
             <ul>
                 <li>Doença pulmonar crônica (asma e doença pulmonar obstrutiva crônica – DPOC);</li>
                 <li>Cardiopatias (insuficiência cardíaca crônica).</li>
-
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> Os testes de diagnóstico de gripe podem ser realizados através da análise de secreções
                 respiratórias da garganta ou nariz, ou do sangue. As amostras devem ser recolhidas nos
                 primeiros 4-5 dias da doença após o aparecimento dos primeiros sintomas. Os seus resultados
@@ -87,10 +86,8 @@
             </p>
         </section>
 
-
         <section>
             <h3>Transmissão</h3>
-
             <p> A transmissão do vírus da gripe ocorre de pessoa para pessoa através de partículas infectadas eliminadas
                 através da tosse ou espirro, mas também pode ocorrer através da contaminação de superfícies por via
                 respiratória.
@@ -98,10 +95,7 @@
                 comum de
                 eliminar gotículas contaminadas, pois o vírus atinge a traqueia.
             </p>
-
-
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -109,7 +103,6 @@
                 infectividade,
                 como vírus Influenza, orienta-se que além da vacina, sejam adotadas medidas gerais de prevenção, tais
                 como:
-
                 <ul>
                     <li>Frequente higienização das mãos, principalmente antes de consumir algum alimento;</li>
                     <li>Higienizar as mãos após tossir ou espirrar;</li>
@@ -117,12 +110,13 @@
                     <li>Não compartilhar objetos de uso pessoal, como talheres, pratos, copos ou garrafas;</li>
                     <li>Evitar contato próximo a pessoas que apresentem sinais ou sintomas de influenza;</li>
                     <li>Evitar sair de casa em período de transmissão da doença;</li>
-
                 </ul>
-
             </p>
         </section>
 
+        <section class="fonte">
+            <p> Fonte: http://www.saude.gov.br/saude-de-a-z/gripe</p>
+        </section>
     </div>
 
     <?php echo $importarhtml["footerINDEX"]; ?>

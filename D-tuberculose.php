@@ -24,7 +24,7 @@
     <?php echo $importarhtml["headerINDEX"]; ?>
 
 
-    <div class="container-head banner" style="background-image: url ('IMG/doenca/tuberculose.jpg')">
+    <div class="container-head banner">
         <h1>Tuberculose</h1>
         <p class="text-desc center"> Doença bacteriana infecciosa. Afeta principalmente os pulmões e pode ser grave. </p>
 
@@ -33,7 +33,11 @@
     <div class="container-body">
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/tuberculose.jpg"/>             
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/tuberculose.jpg" />
+                    <figcaption>Fonte: https://esperanca.com.br/saude/dicas-importantes-para-previnir-tuberculose-uma-doenca-de-alarme-mundial/</figcaption>
+                </figure>
+
             </div>
 
             <div class="col-xl">
@@ -53,7 +57,7 @@
                     </p>
                 </section>
             </div>
-        </div>    
+        </div>
 
         <section>
             <h3>Sintomas</h3>
@@ -81,17 +85,14 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p>O diagnóstico pode ser feito por baciloscopia (exame que detecta a presença da bactéria causadora na
                 secreção expelida pelo o doente) ou radiografia do tórax.</p>
         </section>
 
-
         <section>
             <h3>Transmissão</h3>
-
             <p>A tuberculose é uma doença de transmissão aérea e ocorre a partir da inalação de aerossóis oriundos
                 das
                 vias aéreas, durante a fala, espirro ou tosse das pessoas com tuberculose ativa (pulmonar ou
@@ -114,10 +115,8 @@
                 O bacilo é sensível à luz solar, e a circulação de ar possibilita a dispersão de partículas
                 infectantes.
                 Com isso, ambientes ventilados e com luz natural direta diminuem o risco de transmissão.
-
             </p>
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -142,6 +141,10 @@
                 luz
                 solar.
             </p>
+        </section>
+
+        <section class="fonte">
+            <p> Fonte: http://saude.gov.br/saude-de-a-z/tuberculose</p>
         </section>
 
     </div>

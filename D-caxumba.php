@@ -29,7 +29,10 @@
     <div class="container-body">
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/caxumba.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/caxumba.jpg" />
+                    <figcaption> Fonte: https://www.onortao.com.br/caxumba-sintomas-e-como-se-pega/ </figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -81,7 +84,7 @@
 
 
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> O diagnóstico da caxumba é basicamente clínico, com avaliação médica nas glândulas. Para confirmar, o
                 profissional de saúde pode coletar uma amostra de sangue para
                 confirmar a presença do vírus. A confirmação laboratorial da caxumba vem no resultado desse exame de
@@ -90,25 +93,20 @@
                 sintomas parecidos.</p>
         </section>
 
-
         <section>
             <h3>Transmissão</h3>
-
             <p> A caxumba é causada por vírus da família Paramyxoviridae, gênero Paramyxovirus. A transmissão ocorre por
                 via aérea, por meio da disseminação de gotículas, ou por
                 contato direto com saliva de pessoas infectadas. Já a transmissão indireta é menos frequente, mas pode
                 ocorrer pelo contato com objetos e/ou utensílios contaminados com secreção do nariz e/ou boca.
             </p>
-
             <p>
                 O período de incubação (até o aparecimento dos sintomas) é de 12 a 25 dias, sendo, em média, 16 a 18
                 dias. Já o período de transmissibilidade da doença varia entre 6 e 7 dias antes das manifestações
                 clínicas, até 9 dias após o surgimento dos sintomas. O vírus da caxumba pode ser encontrado na urina até
                 14 dias após o início da doença.
-
             </p>
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -121,9 +119,10 @@
             </p>
         </section>
 
+        <section class="fonte">
+            <p> Fonte: http://www.saude.gov.br/saude-de-a-z/caxumba</p>
+        </section>
     </div>
-
-
 
     <?php echo $importarhtml["footerINDEX"]; ?>
 

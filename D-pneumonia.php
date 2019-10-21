@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="CSS/ancestral.css" type="text/css">
 </head>
 
-
 <body>
 
     <?php echo $importarhtml["headerINDEX"]; ?>
@@ -31,7 +30,10 @@
     <div class="container-body">
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/pneumonia.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/pneumonia.jpg" />
+                    <figcaption>Fonte: https://cn1.com.br/noticias/11/40171,aperto-no-peito-e-tosse-frequente-podem-ser-sinais-de-agua-no-pulmao.html</figcaption>
+                </figure>
             </div>
 
             <div class="col-xl">
@@ -48,12 +50,9 @@
                         alveolar, onde ocorre a troca gasosa. Esse local deve estar sempre muito limpo, livre de substâncias que
                         possam impedir o contato do ar com o sangue.
                     </p>
-
                 </section>
             </div>
         </div>
-
-
 
         <section>
             <h3>Sintomas</h3>
@@ -79,15 +78,13 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> O médico começará perguntando sobre seu histórico médico e fazendo um exame físico, como ouvir seus
                 pulmões com um estetoscópio para verificar se há sons que sugerem pneumonia. Se suspeita de pneumonia, o
                 seu médico pode recomendar os seguintes exames como o de sangue, raio x do torax e o teste do catarro.
             </p>
         </section>
-
 
         <section>
             <h3>Transmissão</h3>
@@ -98,27 +95,24 @@
                 da boca ou de outra infecção em algum local do corpo, por engasgamento com alimentos ou devido ao
                 agravamento de uma gripe.
             </p>
-
-
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
             <p> As vacinas podem ajudar a prevenir a pneumonia. Além disso é recomendado não fumar e lavar as mãos com
                 frequência, principalmente após:
-
                 <ul>
                     <li>Assoar o nariz;</li>
                     <li>Ir ao banheiro;</li>
                     <li>Trocar fraldas;</li>
-                    <li>Antes de comer;</li>
-
+                    <li>Antes de comer.</li>
                 </ul>
-
             </p>
         </section>
 
+        <section class="fonte">
+            <p> Fonte: https://www.minhavida.com.br/saude/temas/pneumonia</p>
+        </section>
     </div>
 
     <?php echo $importarhtml["footerINDEX"]; ?>

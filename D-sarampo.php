@@ -31,7 +31,11 @@
 
         <div class="row">
             <div class="col-xl">
-                <img class="img-fluid" src="IMG/doenca/sarampo.jpg" />
+                <figure>
+                    <img class="img-fluid" src="IMG/doenca/sarampo.jpg" />
+                    <figcaption>Fonte: https://revistapesquisa.fapesp.br/2019/04/15/a-dificil-batalha-contra-o-sarampo/ </figcaption>
+                </figure>
+
             </div>
 
             <div class="col-xl">
@@ -81,23 +85,21 @@
             </ul>
         </section>
 
-
         <section>
-            <h3>Como é feito o diagnóstico?</h3>
+            <h3>Diagnóstico</h3>
             <p> O diagnóstico do sarampo é realizado mediante detecção de anticorpos IgM no sangue, na fase aguda da
                 doença, desde os primeiros dias até 4 semanas após o
                 aparecimento do exantema. Os anticorpos específicos da classe IgG podem, eventualmente, aparecer na fase
                 aguda da doença e costumam ser detectados muitos anos após a infecção.
 
                 Para detecção de anticorpos, são utilizadas as seguintes técnicas:
-                </br>
+                <br>
                 <ul>
                     <li>Ensaio imunoenzimático (ELSIA), para dosagem de IgM e IgG – utilizado pela rede laboratorial de
                         saúde pública no Brasil;</li>
                     <li>Inibição de hemoaglutinação (HI), para dosagem de anticorpos totais;</li>
                     <li>Imunofluorescência, para dosagem de IgM e IgG;</li>
                 </ul>
-
             </p>
 
             <p> Todos os testes têm sensibilidade e especificidade entre 85 e 98%.
@@ -111,14 +113,10 @@
                 dos casos. Ela deverá ser realizada entre 20 e 25 dias após a data da primeira coleta.
 
             </p>
-
-            </p>
         </section>
-
 
         <section>
             <h3>Transmissão</h3>
-
             <p> A transmissão do sarampo ocorre de forma direta, por meio de secreções expelidas ao tossir, espirrar,
                 falar ou respirar. Por isso, é elevado o poder de contágio da doença. A transmissão ocorre de
                 quatro a seis dias antes e até quatro dias após o aparecimento do exantema (manchas vermelhas no corpo).
@@ -131,10 +129,8 @@
                 influenciadas pelas condições socioeconômicas, nutricionais, imunitárias e àquelas que favorecem a
                 aglomeração em
                 lugares públicos e em pequenas residências.
-
             </p>
         </section>
-
 
         <section>
             <h3>Prevenção</h3>
@@ -147,6 +143,10 @@
                 As vacinas estão disponíveis nas mais de 36 mil salas de vacinação do país de acordo com as indicações
                 do Calendário Nacional de Vacinação.
             </p>
+        </section>
+
+        <section class="fonte">
+            <p> Fonte: http://www.eletrossaude.com.br/site/pagina/viva-bem/detalhe/16810</p>
         </section>
 
     </div>
