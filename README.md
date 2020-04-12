@@ -1,6 +1,10 @@
 # Vaccinus
 Vaccinus é uma aplicação web que procura deixar mais prático e seguro o controle das vacinas tomadas por um indivíduo, através de uma caderneta online, que pode ser ser acessada por qualquer dispositivo online conectado à internet.
 
+Tem como funções:
+- Cadastro de vacinas
+
+
 Esse é um projeto de TCC desenvolvido no ano de 2019 para o curso técnico de informática do Instituto Federal de Ciência e Tecnologia de São Paulo (IFSP) - Campus Cubatão.
 
 
