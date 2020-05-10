@@ -62,6 +62,9 @@ foreign key(cpf) references pessoa (cpf)
 ### Calendários de vacinação para download
 ![Calendários de vacinação para download](IMG/pagina-inicial-calendarios.png)
 
+### Página de descrição de doenças
+![Página inicial](IMG/pagina-doencas.png)
+
 ### Página de login
 ![Página de login](IMG/pagina-login.png)
 
